@@ -1,0 +1,151 @@
+{
+  "id": "hora-de-cacar",
+  "title": "Hora de Caçar",
+  "description": "Sistema para jogar Hora de Caçar (Year Zero Engine) no Foundry VTT: fichas de Caçador, PNJ e Criatura, rolagens de d6 com Forçar, Medo, condições, ferimentos críticos e iniciativa por cartas.",
+  "version": "0.3.1",
+  "authors": [
+    {
+      "name": "Jeferson M. Leopoldino"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "esmodules": [
+    "module/hora-de-cacar.mjs"
+  ],
+  "styles": [
+    "styles/hora-de-cacar.css"
+  ],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "cacador": {
+        "htmlFields": []
+      },
+      "pnj": {
+        "htmlFields": []
+      },
+      "criatura": {
+        "htmlFields": []
+      }
+    },
+    "Item": {
+      "arma": {},
+      "protecao": {},
+      "equipamento": {},
+      "talento": {},
+      "marca": {},
+      "rito": {}
+    }
+  },
+  "packs": [
+    {
+      "name": "talentos",
+      "label": "Talentos",
+      "path": "packs/talentos",
+      "type": "Item",
+      "system": "hora-de-cacar",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "arsenal",
+      "label": "Arsenal do Caçador (armas, proteções, equipamento e itens de poder)",
+      "path": "packs/arsenal",
+      "type": "Item",
+      "system": "hora-de-cacar",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ritos",
+      "label": "Ritos",
+      "path": "packs/ritos",
+      "type": "Item",
+      "system": "hora-de-cacar",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "monstronomicon",
+      "label": "Monstronomicon",
+      "path": "packs/monstronomicon",
+      "type": "Actor",
+      "system": "hora-de-cacar",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "antagonistas",
+      "label": "Antagonistas humanos",
+      "path": "packs/antagonistas",
+      "type": "Actor",
+      "system": "hora-de-cacar",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "brinquedo-da-praca",
+      "label": "O Brinquedo da Praça (aventura)",
+      "path": "packs/brinquedo-da-praca",
+      "type": "Actor",
+      "system": "hora-de-cacar",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Hora de Caçar",
+      "sorting": "m",
+      "color": "#8A1A12",
+      "packs": [
+        "talentos",
+        "arsenal",
+        "ritos",
+        "monstronomicon",
+        "antagonistas",
+        "brinquedo-da-praca"
+      ]
+    }
+  ],
+  "grid": {
+    "distance": 5,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "vida",
+  "secondaryTokenAttribute": null,
+  "initiative": "1d10",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "relationships": {
+    "recommends": [
+      {
+        "id": "yze-combat",
+        "type": "module",
+        "reason": "Iniciativa por cartas com baralho, ações lenta/rápida e Ferocidade (o sistema se configura sozinho)."
+      }
+    ]
+  }
+}

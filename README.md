@@ -1,12 +1,12 @@
 # Hora de Caçar — sistema para Foundry VTT
 
-Versão 0.2.0 · Foundry VTT v13 (mínimo) e v14 (verificado) · Year Zero Engine
+Versão 0.3.1 · Foundry VTT v13 (mínimo) e v14 (verificado) · Year Zero Engine
 
 ## Instalação pelo Foundry (link do manifesto)
 
 1. No Foundry, aba **Game Systems** → **Install System**.
 2. No campo **Manifest URL**, cole:
-   `https://github.com/aka-spit/hora-de-cacar/releases/latest/download/system.json`
+   `https://github.com/SEU-USUARIO/hora-de-cacar/releases/latest/download/system.json`
 3. Clique em **Install**. Atualizações aparecem no botão **Update** da mesma aba.
 
 ## Instalação (manual)
@@ -17,7 +17,7 @@ Versão 0.2.0 · Foundry VTT v13 (mínimo) e v14 (verificado) · Year Zero Engin
    - macOS: `~/Library/Application Support/FoundryVTT/Data/systems/`
    - Linux: `~/.local/share/FoundryVTT/Data/systems/`
 3. Confira que ficou `Data/systems/hora-de-cacar/system.json` (e não `hora-de-cacar/hora-de-cacar/system.json`).
-4. Abra o Foundry → aba **Game Systems**: deve aparecer "Hora de Caçar 0.2.0".
+4. Abra o Foundry → aba **Game Systems**: deve aparecer "Hora de Caçar 0.3.1".
 5. **Game Worlds → Create World** → escolha o sistema **Hora de Caçar** → entre como Narrador.
 
 ## Teste rápido dentro do Foundry
@@ -48,7 +48,7 @@ Para publicar no GitHub e gerar o manifesto, veja `GUIA-GITHUB.md`.
 | **Iniciativa por cartas** | O rastreador de combate tira cartas de 1 a 10 (sem repetir até acabar o baralho), age do menor para o maior, PJ ganha empates. Criatura com Ferocidade N entra N vezes no combate. Reflexos de Quem Já Foi Emboscado tira duas e fica com a menor. |
 | **PNJ** | Resistência física/mental (1 a 3) com trilha de dano e "fora da cena"; perícias escritas em texto ("Combate 6, Vigor 4") viram botões de rolagem. |
 | **Criatura** | Caixa de atributos do livro (Ferocidade, Vida, Armadura, Pavor X/Y, AGILIDADE, PERCEPÇÃO, Intensidade), pistas em camadas, Protocolo, comportamento d6, 6 ataques característicos (físico, mental, Medo, Maldição, especial). Botão de ataque d6 que **nunca repete** o da rodada anterior. |
-| **Compêndios** | 116 talentos (60 de ocupação, 56 gerais), 55 itens do Arsenal (armas, proteções, rotina, vestuário, explosivos), 5 criaturas de amostra (Banshee, Caroneira, Cavaleiro sem Cabeça, Dama de Branco, Carniçal). |
+| **Compêndios** | **Talentos** (116: 60 de ocupação e 56 gerais) · **Arsenal do Caçador** (114: armas, proteções, rotina, vestuário, explosivos e os 59 itens de poder do Cap. 8) · **Ritos** (19) · **Monstronomicon** (37: as 30 criaturas do livro, 6 bruxas e feiticeiros e A Mãe da Figueira) · **Antagonistas humanos** (20 PNJs) · **O Brinquedo da Praça** (elenco de 12 PNJs com as pistas que guardam, A Mãe da Figueira e Bento). Tudo com ícones vetoriais. |
 
 ## Estrutura dos arquivos
 
@@ -92,12 +92,14 @@ game.horaDeCacar.novaSessaoTodos();     // (Narrador) libera os usos "uma vez po
 ## Próximos passos sugeridos (roadmap)
 
 1. **Ficha do QG e do Carro** (ator `qg` e `veiculo`): Melhorias, Contatos, Pessoal, relógios de ameaça, qualidade, rolagem de viagem 2D6, perseguições.
-3. **Itens de poder e ritos** do Cap. 8 no compêndio Arsenal.
-4. **Resto do Monstronomicon** e as tabelas do Narrador (Gerador de Mistério, Gerador Rápido) como RollTables.
+3. As tabelas do Narrador (Gerador de Mistério, Gerador Rápido, Ideias de Mistério) como RollTables.
 5. **Relógio de mistério** como app flutuante para o Narrador.
-6. **Aventura O Brinquedo da Praça** como Adventure (cenas, diário, PNJs, criatura).
+6. **O Brinquedo da Praça** completo como Adventure (cenas, mapas e diário do Narrador); o elenco e as criaturas já estão no compêndio.
 7. Tradução para espanhol (`lang/es.json`) se o livro tiver edição em espanhol.
 
 ## Créditos
+
+Ícones: game-icons.net (CC BY 3.0) — lista completa de autores em `CREDITOS-ICONES.md`.
+
 
 Hora de Caçar © Jeferson M. Leopoldino e Cássio Fernandes. Este sistema de Foundry usa as regras do livro (versão 0.1, out. 2026). Year Zero Engine é marca da Free League Publishing; confira a licença Free League Workshop antes de publicar.

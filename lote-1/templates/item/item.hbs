@@ -1,0 +1,94 @@
+<div class="hdc-ficha item-ficha">
+  <header class="hdc-topo compacto">
+    <div class="identificacao">
+      <img class="item-img" src="{{item.img}}" data-action="editarImagem" title="Trocar ícone">
+      <div class="campos">
+        <span class="tipo">{{tipoLabel}}</span>
+        <h1 class="titulo"><input type="text" name="name" value="{{item.name}}"></h1>
+      </div>
+    </div>
+  </header>
+  <section class="hdc-corpo">
+    {{#if isArma}}
+    <div class="linha c3">
+      <label class="f"><span>Dano</span><input type="text" name="system.dano" value="{{system.dano}}" placeholder="2 ou Fogo"></label>
+      <label class="f"><span>Alcance (zonas)</span><input type="text" name="system.alcance" value="{{system.alcance}}" placeholder="0, 0a1, 1a3"></label>
+      <label class="f"><span>Bônus (dados)</span><input type="number" name="system.bonus" value="{{system.bonus}}"></label>
+    </div>
+    <div class="linha c2">
+      <label class="f"><span>Perícia</span><select name="system.pericia">{{#each opcoesPericia}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label class="chk"><input type="checkbox" name="system.itemDePoder" {{checked system.itemDePoder}}> Item de poder (1d6 a cada uso)</label>
+    </div>
+    {{/if}}
+
+    {{#if isProtecao}}
+    <div class="linha c3">
+      <label class="f"><span>Proteção (dados)</span><input type="number" name="system.protecao" value="{{system.protecao}}" min="0"></label>
+      <label class="f"><span>Penalidade em Atletismo</span><input type="number" name="system.penalidade" value="{{system.penalidade}}" min="0"></label>
+      <div class="col">
+        <label class="chk"><input type="checkbox" name="system.capacete" {{checked system.capacete}}> Capacete (+1)</label>
+        <label class="chk"><input type="checkbox" name="system.equipada" {{checked system.equipada}}> Vestida</label>
+      </div>
+    </div>
+    {{/if}}
+
+    {{#if isEquipamento}}
+    <div class="linha c3">
+      <label class="f"><span>Bônus (dados)</span><input type="number" name="system.bonus" value="{{system.bonus}}"></label>
+      <label class="f"><span>Perícia do bônus</span><select name="system.pericia">{{#each opcoesPericia}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label class="f"><span>Uso</span><input type="text" name="system.uso" value="{{system.uso}}"></label>
+    </div>
+    <label class="chk"><input type="checkbox" name="system.itemDePoder" {{checked system.itemDePoder}}> Item de poder (1d6 a cada uso contra criatura)</label>
+    {{/if}}
+
+    {{#if temPeso}}
+    <div class="linha c3">
+      <label class="f"><span>Disponibilidade (1–5)</span><input type="number" name="system.disponibilidade" value="{{system.disponibilidade}}" min="0" max="5"></label>
+      <label class="f"><span>Peso</span><select name="system.peso">{{#each opcoesPeso}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label class="f"><span>Quantidade</span><input type="number" name="system.quantidade" value="{{system.quantidade}}" min="0"></label>
+    </div>
+    <label class="chk"><input type="checkbox" name="system.carregado" {{checked system.carregado}}> Carregado (conta na capacidade)</label>
+    {{/if}}
+
+    {{#if isTalento}}
+    <div class="linha c3">
+      <label class="f"><span>Categoria</span><select name="system.categoria">{{#each opcoesCategoria}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label class="f"><span>Ocupação</span><input type="text" name="system.ocupacao" value="{{system.ocupacao}}"></label>
+      <label class="f"><span>Especialidade</span><input type="text" name="system.especialidade" value="{{system.especialidade}}"></label>
+    </div>
+    <div class="linha c3">
+      <label class="f"><span>Bônus automático</span><input type="number" name="system.bonus" value="{{system.bonus}}"></label>
+      <label class="f"><span>na perícia</span><select name="system.pericia">{{#each opcoesPericia}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label class="f"><span>Limite de uso</span><select name="system.limite">{{#each opcoesLimite}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    </div>
+    <p class="dica">O bônus aparece como opção no diálogo de rolagem daquela perícia (o jogador marca quando a situação do talento acontece).</p>
+    <label class="f"><span>Ocupações comuns</span><input type="text" name="system.ocupacoesComuns" value="{{system.ocupacoesComuns}}"></label>
+    {{/if}}
+
+    {{#if isMarca}}
+    <div class="linha c3">
+      <label class="f"><span>Tipo</span><select name="system.tipo">{{#each opcoesTipoMarca}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label class="f"><span>Natureza</span><select name="system.natureza">{{#each opcoesNatureza}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label class="f"><span>Perícia afetada</span><input type="text" name="system.pericia" value="{{system.pericia}}" placeholder="Atletismo, Medo…"></label>
+    </div>
+    <div class="linha c3">
+      <label class="f"><span>Modificador</span><input type="number" name="system.mod" value="{{system.mod}}"></label>
+      <label class="f"><span>Origem (crítico)</span><input type="text" name="system.origem" value="{{system.origem}}"></label>
+      <label class="f"><span>Prazo</span><input type="text" name="system.prazo" value="{{system.prazo}}"></label>
+    </div>
+    <p class="dica">Defeito: uma vez por sessão o Narrador ativa (Dificuldade, Estigma, Pior inimigo ou Perda de controle). Revelação: uma vez por sessão, bônus na perícia, Visão, Rasgar o Véu ou Pressentir.</p>
+    {{/if}}
+
+    {{#if isRito}}
+    <div class="linha c3">
+      <label class="f"><span>Tipo</span><select name="system.tipo">{{#each opcoesTipoRito}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label class="f"><span>Língua ritual</span><input type="text" name="system.lingua" value="{{system.lingua}}"></label>
+      <label class="f"><span>Tempo</span><input type="text" name="system.tempo" value="{{system.tempo}}"></label>
+    </div>
+    <label class="f"><span>Custo / componentes</span><input type="text" name="system.custo" value="{{system.custo}}"></label>
+    {{/if}}
+
+    <h2 class="sec">Descrição</h2>
+    <textarea name="system.descricao" rows="8">{{system.descricao}}</textarea>
+  </section>
+</div>

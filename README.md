@@ -6,7 +6,7 @@ Versão 0.3.1 · Foundry VTT v13 (mínimo) e v14 (verificado) · Year Zero Engin
 
 1. No Foundry, aba **Game Systems** → **Install System**.
 2. No campo **Manifest URL**, cole:
-   `https://github.com/SEU-USUARIO/hora-de-cacar/releases/latest/download/system.json`
+   `https://github.com/aka-spit/hora-de-cacar/releases/latest/download/system.json`
 3. Clique em **Install**. Atualizações aparecem no botão **Update** da mesma aba.
 
 ## Instalação (manual)

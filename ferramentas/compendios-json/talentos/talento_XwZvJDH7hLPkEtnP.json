@@ -1,0 +1,29 @@
+{
+ "_id": "XwZvJDH7hLPkEtnP",
+ "_key": "!items!XwZvJDH7hLPkEtnP",
+ "name": "Palavra de Fé",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Uma vez por sessão (ação lenta), Entidades que temem a fé na sua zona perdem a próxima ação e recuam uma zona, sem teste.",
+  "categoria": "ocupacao",
+  "ocupacao": "Religioso",
+  "especialidade": "Exorcista",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "sessao",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "JE82UowmTHcBz7Ix",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

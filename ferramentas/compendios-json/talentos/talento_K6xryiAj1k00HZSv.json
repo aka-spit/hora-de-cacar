@@ -1,0 +1,29 @@
+{
+ "_id": "K6xryiAj1k00HZSv",
+ "_key": "!items!K6xryiAj1k00HZSv",
+ "name": "Línguas Mortas",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Conhece latim, grego antigo e hebraico antigo e lê cifras ocultistas sem teste. Ganha +2 para decifrar símbolos.",
+  "categoria": "ocupacao",
+  "ocupacao": "Estudioso",
+  "especialidade": "Folclorista",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "W2e2EUh4zrUeONMf",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

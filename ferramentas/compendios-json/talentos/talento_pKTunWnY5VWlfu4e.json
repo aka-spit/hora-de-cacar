@@ -1,0 +1,29 @@
+{
+ "_id": "pKTunWnY5VWlfu4e",
+ "_key": "!items!pKTunWnY5VWlfu4e",
+ "name": "Corredor",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Você ganha +2 em Atletismo para correr, fugir ou perseguir a pé. Em perseguições curtas, você começa com 1 sucesso.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Criminoso, Oficial, Trabalhador",
+  "pericia": "atletismo",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

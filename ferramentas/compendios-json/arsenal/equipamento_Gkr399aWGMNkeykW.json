@@ -1,0 +1,29 @@
+{
+ "_id": "Gkr399aWGMNkeykW",
+ "_key": "!items!Gkr399aWGMNkeykW",
+ "name": "Kit de arrombamento",
+ "type": "equipamento",
+ "img": "icons/svg/item-bag.svg",
+ "system": {
+  "descricao": "Subterfúgio em fechaduras.",
+  "disponibilidade": 2,
+  "peso": "leve",
+  "carregado": true,
+  "quantidade": 1,
+  "bonus": 1,
+  "pericia": "subterfugio",
+  "uso": "Subterfúgio em fechaduras",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "wNWBcl09ma3cOFEu",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_id": "P7l0RJZEb47lBBW2",
+ "_key": "!items!P7l0RJZEb47lBBW2",
+ "name": "Público",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Uma vez por caso, pede ajuda aos seguidores. O Narrador entrega uma pista periférica.",
+  "categoria": "ocupacao",
+  "ocupacao": "Comunicador",
+  "especialidade": "Criador de conteúdo",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "caso",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "3N6x3HwiKxfPGpxK",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

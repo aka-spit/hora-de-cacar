@@ -1,0 +1,29 @@
+{
+ "_id": "a8Vh7IQao2npYtib",
+ "_key": "!items!a8Vh7IQao2npYtib",
+ "name": "Reputação",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Escolha um meio em que todo mundo conhece o seu nome: a Rede, o submundo, a imprensa, a igreja, os caminhoneiros ou a polícia. Você ganha +2 em Persuadir com gente desse meio, e uma vez por caso alguém de lá se oferece para ajudar. Fora dele, porém, a fama às vezes chega antes de você, e nem sempre é boa.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Qualquer ocupação",
+  "pericia": "persuadir",
+  "bonus": 2,
+  "limite": "caso",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

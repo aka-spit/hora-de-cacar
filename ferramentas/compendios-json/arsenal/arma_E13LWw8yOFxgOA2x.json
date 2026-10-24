@@ -1,0 +1,30 @@
+{
+ "_id": "E13LWw8yOFxgOA2x",
+ "_key": "!items!E13LWw8yOFxgOA2x",
+ "name": "Lança-chamas improvisado",
+ "type": "arma",
+ "img": "icons/svg/sword.svg",
+ "system": {
+  "descricao": "Um pulverizador de jardim, um maçarico e muita coragem. Feito com Manufatura (uma cena), põe fogo no alvo. A cada uso, role 1d6: com 1, ele vaza, e quem o carrega pega fogo.",
+  "disponibilidade": 4,
+  "peso": "pesado",
+  "carregado": true,
+  "quantidade": 1,
+  "dano": "Fogo",
+  "alcance": "0a1",
+  "bonus": 0,
+  "pericia": "manufatura",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KrrCayA3dK7x0rYS",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

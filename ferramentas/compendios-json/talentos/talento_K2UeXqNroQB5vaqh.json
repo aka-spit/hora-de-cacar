@@ -1,0 +1,29 @@
+{
+ "_id": "K2UeXqNroQB5vaqh",
+ "_key": "!items!K2UeXqNroQB5vaqh",
+ "name": "Guarda-Costas",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Quando um aliado na sua zona é atingido por um ataque físico, você pode rolar Atletismo para se pôr na frente. Isso não gasta ação. Com um sucesso, todo o dano daquele ataque vai para você, e não para ele.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Oficial, Religioso, Trabalhador",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

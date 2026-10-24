@@ -1,0 +1,30 @@
+{
+ "_id": "Bk4qDKKFuVTErib0",
+ "_key": "!items!Bk4qDKKFuVTErib0",
+ "name": "Spray de pimenta",
+ "type": "arma",
+ "img": "icons/svg/sword.svg",
+ "system": {
+  "descricao": "Não causa dano, mas, com um sucesso, o alvo humano ou animal perde a próxima ação lenta e fica com −2 em Percepção até o fim da cena. Criaturas com olhos e nariz sofrem o mesmo efeito; Assombrações e Entidades sem corpo, não.",
+  "disponibilidade": 1,
+  "peso": "leve",
+  "carregado": true,
+  "quantidade": 1,
+  "dano": "—",
+  "alcance": "0",
+  "bonus": 1,
+  "pericia": "pontaria",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KrrCayA3dK7x0rYS",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

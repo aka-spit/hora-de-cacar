@@ -1,0 +1,29 @@
+{
+ "_id": "aakp91rwU2xnFncr",
+ "_key": "!items!aakp91rwU2xnFncr",
+ "name": "Binóculos",
+ "type": "equipamento",
+ "img": "icons/svg/item-bag.svg",
+ "system": {
+  "descricao": "Percepção à distância.",
+  "disponibilidade": 2,
+  "peso": "normal",
+  "carregado": true,
+  "quantidade": 1,
+  "bonus": 2,
+  "pericia": "percepcao",
+  "uso": "Percepção à distância",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "wNWBcl09ma3cOFEu",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

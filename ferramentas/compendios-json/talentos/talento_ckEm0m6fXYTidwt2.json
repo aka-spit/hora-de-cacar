@@ -1,0 +1,29 @@
+{
+ "_id": "ckEm0m6fXYTidwt2",
+ "_key": "!items!ckEm0m6fXYTidwt2",
+ "name": "Método",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Investigação ao analisar amostras, resíduos ou restos de uma criatura.",
+  "categoria": "ocupacao",
+  "ocupacao": "Cientista",
+  "especialidade": "Pesquisador de laboratório",
+  "ocupacoesComuns": "",
+  "pericia": "investigacao",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "ECPsTBxMkbvtqv4t",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

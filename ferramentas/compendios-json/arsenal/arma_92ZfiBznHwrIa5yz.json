@@ -1,0 +1,30 @@
+{
+ "_id": "92ZfiBznHwrIa5yz",
+ "_key": "!items!92ZfiBznHwrIa5yz",
+ "name": "Machado",
+ "type": "arma",
+ "img": "icons/svg/sword.svg",
+ "system": {
+  "descricao": "Dano alto e nenhum bônus, porque é lento e cansa. Usa as duas mãos.",
+  "disponibilidade": 2,
+  "peso": "pesado",
+  "carregado": true,
+  "quantidade": 1,
+  "dano": "3",
+  "alcance": "0",
+  "bonus": 0,
+  "pericia": "combate",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KrrCayA3dK7x0rYS",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

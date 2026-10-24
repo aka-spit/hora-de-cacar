@@ -1,0 +1,29 @@
+{
+ "_id": "ALtP8Ci9zIl7mZJI",
+ "_key": "!items!ALtP8Ci9zIl7mZJI",
+ "name": "Duro na Queda",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Quando uma falha custa uma condição, você sempre escolhe o tipo, física ou mental.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Criminoso, Oficial, Trabalhador",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

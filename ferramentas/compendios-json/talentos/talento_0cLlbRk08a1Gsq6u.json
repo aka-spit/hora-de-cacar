@@ -1,0 +1,29 @@
+{
+ "_id": "0cLlbRk08a1Gsq6u",
+ "_key": "!items!0cLlbRk08a1Gsq6u",
+ "name": "Casca Grossa",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Seu corpo aguenta o que derruba os outros. Você ganha +2 em Vigor contra veneno, doença, frio, calor e falta de sono.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Herdeiro da Vigília, Médico, Trabalhador",
+  "pericia": "vigor",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

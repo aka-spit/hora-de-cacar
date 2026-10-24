@@ -1,0 +1,46 @@
+# Gera o pacote do Foundry toda vez que você publica um Release no GitHub.
+# 1. Lê a versão da tag do release (ex.: v0.2.0 → 0.2.0).
+# 2. Preenche version, url, manifest e download do system.json com o endereço deste repositório.
+# 3. Monta hora-de-cacar.zip e anexa system.json + zip ao release.
+# O link de instalação no Foundry fica sempre:
+#   https://github.com/<usuario>/<repositorio>/releases/latest/download/system.json
+name: Publicar versão
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  pacote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Preencher o manifesto (system.json)
+        run: |
+          VERSAO="${GITHUB_REF_NAME#v}"
+          REPO="${{ github.repository }}"
+          jq --arg v "$VERSAO" \
+             --arg url "https://github.com/$REPO" \
+             --arg man "https://github.com/$REPO/releases/latest/download/system.json" \
+             --arg dl "https://github.com/$REPO/releases/download/$GITHUB_REF_NAME/hora-de-cacar.zip" \
+             '.version=$v | .url=$url | .manifest=$man | .download=$dl | .bugs=($url + "/issues") | .readme=($url + "#readme") | .changelog=($url + "/blob/main/CHANGELOG.md")' \
+             system.json > system.tmp && mv system.tmp system.json
+          cat system.json
+
+      - name: Montar o zip
+        run: |
+          zip -r hora-de-cacar.zip system.json module templates styles lang packs README.md CHANGELOG.md \
+            -x "packs/*/LOCK" "packs/*/LOG" "packs/*/LOG.old"
+          unzip -l hora-de-cacar.zip | tail -1
+
+      - name: Anexar ao release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            system.json
+            hora-de-cacar.zip

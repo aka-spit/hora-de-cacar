@@ -1,0 +1,29 @@
+{
+ "_id": "yI3vrHfxXJUqJfYv",
+ "_key": "!items!yI3vrHfxXJUqJfYv",
+ "name": "Erudição Oculta",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Uma vez por caso, pergunte ao Narrador uma fraqueza, um hábito ou parte do Protocolo. A resposta é verdadeira, talvez incompleta.",
+  "categoria": "ocupacao",
+  "ocupacao": "Estudioso",
+  "especialidade": "Ocultista",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "caso",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "W2e2EUh4zrUeONMf",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

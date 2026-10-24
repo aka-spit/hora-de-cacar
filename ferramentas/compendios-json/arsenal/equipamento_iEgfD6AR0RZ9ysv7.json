@@ -1,0 +1,29 @@
+{
+ "_id": "iEgfD6AR0RZ9ysv7",
+ "_key": "!items!iEgfD6AR0RZ9ysv7",
+ "name": "Granada caseira",
+ "type": "equipamento",
+ "img": "icons/svg/explosion.svg",
+ "system": {
+  "descricao": "Explosivo. Poder 6, alcança 0 zona(s) além do impacto. Arremesso: Pontaria, alcance 1 a 2. Quem arremessou rola 6 dados; cada 6 é 1 de dano em todos na zona do impacto (1 a menos por zona de distância). Não pode ser forçado. Coletes e Armadura de criaturas não reduzem.",
+  "disponibilidade": 4,
+  "peso": "leve",
+  "carregado": true,
+  "quantidade": 1,
+  "bonus": 0,
+  "pericia": "pontaria",
+  "uso": "Poder 6",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "3D5dnQIkFJlxCTKw",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

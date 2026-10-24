@@ -1,0 +1,29 @@
+{
+ "_id": "FsrU7nAx2fo9Nugp",
+ "_key": "!items!FsrU7nAx2fo9Nugp",
+ "name": "Forte como Touro",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Força Bruta para erguer, arrombar ou segurar.",
+  "categoria": "ocupacao",
+  "ocupacao": "Trabalhador",
+  "especialidade": "Braçal",
+  "ocupacoesComuns": "",
+  "pericia": "forcaBruta",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "AEwv4ARclwIi3lNI",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

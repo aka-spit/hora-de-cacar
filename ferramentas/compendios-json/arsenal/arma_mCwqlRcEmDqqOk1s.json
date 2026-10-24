@@ -1,0 +1,30 @@
+{
+ "_id": "mCwqlRcEmDqqOk1s",
+ "_key": "!items!mCwqlRcEmDqqOk1s",
+ "name": "Escopeta",
+ "type": "arma",
+ "img": "icons/svg/sword.svg",
+ "system": {
+  "descricao": "O canhão dos Caçadores. Contra um alvo na zona vizinha, a cobertura dele rola 1 dado a menos de Proteção.",
+  "disponibilidade": 3,
+  "peso": "pesado",
+  "carregado": true,
+  "quantidade": 1,
+  "dano": "3",
+  "alcance": "0a1",
+  "bonus": 1,
+  "pericia": "pontaria",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KrrCayA3dK7x0rYS",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

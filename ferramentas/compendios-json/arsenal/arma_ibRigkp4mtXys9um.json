@@ -1,0 +1,30 @@
+{
+ "_id": "ibRigkp4mtXys9um",
+ "_key": "!items!ibRigkp4mtXys9um",
+ "name": "Escopeta de cano serrado",
+ "type": "arma",
+ "img": "icons/svg/sword.svg",
+ "system": {
+  "descricao": "Ilegal, curta e brutal. Só funciona de perto (alcance 0), mas cabe debaixo do casaco (+1 em Subterfúgio para escondê-la).",
+  "disponibilidade": 3,
+  "peso": "normal",
+  "carregado": true,
+  "quantidade": 1,
+  "dano": "3",
+  "alcance": "0",
+  "bonus": 2,
+  "pericia": "pontaria",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KrrCayA3dK7x0rYS",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

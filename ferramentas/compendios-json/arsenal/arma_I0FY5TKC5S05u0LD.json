@@ -1,0 +1,30 @@
+{
+ "_id": "I0FY5TKC5S05u0LD",
+ "_key": "!items!I0FY5TKC5S05u0LD",
+ "name": "Escopeta com sal",
+ "type": "arma",
+ "img": "icons/svg/sword.svg",
+ "system": {
+  "descricao": "Cartuchos com sal grosso no lugar do chumbo. Causam pouco dano em gente viva, mas dispersam uma Assombração por 1D6 rodadas. Todo Caçador sabe recarregar uma.",
+  "disponibilidade": 2,
+  "peso": "pesado",
+  "carregado": true,
+  "quantidade": 1,
+  "dano": "1",
+  "alcance": "0a1",
+  "bonus": 1,
+  "pericia": "pontaria",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KrrCayA3dK7x0rYS",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

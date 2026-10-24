@@ -1,0 +1,29 @@
+{
+ "_id": "VbmqagSFvtgxwNeY",
+ "_key": "!items!VbmqagSFvtgxwNeY",
+ "name": "Faro de Sangue",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Investigação para seguir o rastro de uma criatura até o covil.",
+  "categoria": "ocupacao",
+  "ocupacao": "Herdeiro da Vigília",
+  "especialidade": "Rastreador",
+  "ocupacoesComuns": "",
+  "pericia": "investigacao",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "SWsFLL7Dl2YMXjNf",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

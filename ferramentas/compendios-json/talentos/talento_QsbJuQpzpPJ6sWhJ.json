@@ -1,0 +1,29 @@
+{
+ "_id": "QsbJuQpzpPJ6sWhJ",
+ "_key": "!items!QsbJuQpzpPJ6sWhJ",
+ "name": "Confissão",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Quando alguém se confessa a você em uma cena, um PNJ revela um segredo ou um PJ cura todas as condições mentais (uma vez por sessão).",
+  "categoria": "ocupacao",
+  "ocupacao": "Religioso",
+  "especialidade": "Sacerdote",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "sessao",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "JE82UowmTHcBz7Ix",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

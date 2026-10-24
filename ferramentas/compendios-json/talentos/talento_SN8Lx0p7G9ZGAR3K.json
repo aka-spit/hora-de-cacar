@@ -1,0 +1,29 @@
+{
+ "_id": "SN8Lx0p7G9ZGAR3K",
+ "_key": "!items!SN8Lx0p7G9ZGAR3K",
+ "name": "Golpe Pesado",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Cause +1 de dano corpo a corpo se você abrir mão da ação rápida na rodada.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Herdeiro da Vigília, Oficial, Trabalhador",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

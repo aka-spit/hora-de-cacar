@@ -1,0 +1,29 @@
+{
+ "_id": "3Bt38sSamZ8ilMP0",
+ "_key": "!items!3Bt38sSamZ8ilMP0",
+ "name": "Scanner de rádio policial",
+ "type": "equipamento",
+ "img": "icons/svg/item-bag.svg",
+ "system": {
+  "descricao": "Investigação, ouvir a polícia.",
+  "disponibilidade": 2,
+  "peso": "leve",
+  "carregado": true,
+  "quantidade": 1,
+  "bonus": 1,
+  "pericia": "investigacao",
+  "uso": "Investigação, ouvir a polícia",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "wNWBcl09ma3cOFEu",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

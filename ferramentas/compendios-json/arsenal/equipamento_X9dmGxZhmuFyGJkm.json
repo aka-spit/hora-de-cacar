@@ -1,0 +1,29 @@
+{
+ "_id": "X9dmGxZhmuFyGJkm",
+ "_key": "!items!X9dmGxZhmuFyGJkm",
+ "name": "Rádio comunicador (par)",
+ "type": "equipamento",
+ "img": "icons/svg/item-bag.svg",
+ "system": {
+  "descricao": "Falar com o grupo separado.",
+  "disponibilidade": 1,
+  "peso": "leve",
+  "carregado": true,
+  "quantidade": 1,
+  "bonus": 0,
+  "pericia": "",
+  "uso": "Falar com o grupo separado",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "wNWBcl09ma3cOFEu",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

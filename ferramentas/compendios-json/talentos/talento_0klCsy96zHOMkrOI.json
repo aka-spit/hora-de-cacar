@@ -1,0 +1,29 @@
+{
+ "_id": "0klCsy96zHOMkrOI",
+ "_key": "!items!0klCsy96zHOMkrOI",
+ "name": "Gambiarra de Laboratório",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Uma vez por caso, com uma cena de trabalho, faz um item de poder simples (bala de prata, granada de sal) sem teste nem Recursos.",
+  "categoria": "ocupacao",
+  "ocupacao": "Cientista",
+  "especialidade": "Pesquisador de laboratório",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "caso",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "ECPsTBxMkbvtqv4t",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

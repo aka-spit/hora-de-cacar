@@ -1,0 +1,29 @@
+{
+ "_id": "y2sA8SCLo1JhfAlH",
+ "_key": "!items!y2sA8SCLo1JhfAlH",
+ "name": "Distintivo ou crachá falso",
+ "type": "equipamento",
+ "img": "icons/svg/item-bag.svg",
+ "system": {
+  "descricao": "Persuadir em fachadas.",
+  "disponibilidade": 2,
+  "peso": "leve",
+  "carregado": true,
+  "quantidade": 1,
+  "bonus": 1,
+  "pericia": "persuadir",
+  "uso": "Persuadir em fachadas",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "wNWBcl09ma3cOFEu",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

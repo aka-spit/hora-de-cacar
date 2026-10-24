@@ -1,0 +1,29 @@
+{
+ "_id": "OMF2BVGGX3WKHiAV",
+ "_key": "!items!OMF2BVGGX3WKHiAV",
+ "name": "Saque Rápido",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Você leva a mão à arma quase por instinto. Sacar ou trocar de arma não custa ação.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Criminoso, Herdeiro da Vigília, Oficial",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

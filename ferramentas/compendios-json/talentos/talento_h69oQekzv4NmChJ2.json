@@ -1,0 +1,29 @@
+{
+ "_id": "h69oQekzv4NmChJ2",
+ "_key": "!items!h69oQekzv4NmChJ2",
+ "name": "Aguenta o Tranco",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Uma vez por sessão, ignore as penalidades de condições físicas em um teste.",
+  "categoria": "ocupacao",
+  "ocupacao": "Trabalhador",
+  "especialidade": "Braçal",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "sessao",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "AEwv4ARclwIi3lNI",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_id": "JOLNMeus07NjrppF",
+ "_key": "!items!JOLNMeus07NjrppF",
+ "name": "Símbolo de Fé",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Com seu símbolo na mão, uma vez por sessão, você ganha +2 em Vontade ou em um teste de Medo.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Médico, Religioso, Sensitivo",
+  "pericia": "vontade",
+  "bonus": 2,
+  "limite": "sessao",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

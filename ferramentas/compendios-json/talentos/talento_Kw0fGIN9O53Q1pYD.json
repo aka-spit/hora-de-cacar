@@ -1,0 +1,29 @@
+{
+ "_id": "Kw0fGIN9O53Q1pYD",
+ "_key": "!items!Kw0fGIN9O53Q1pYD",
+ "name": "Treinamento Tático",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "No início de um combate, troque sua carta de iniciativa com a de um aliado.",
+  "categoria": "ocupacao",
+  "ocupacao": "Oficial",
+  "especialidade": "Militar",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "r2zRK9aRYNOfUAV8",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

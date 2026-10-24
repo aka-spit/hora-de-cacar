@@ -1,0 +1,29 @@
+{
+ "_id": "GHu7NhDRktPjVp0L",
+ "_key": "!items!GHu7NhDRktPjVp0L",
+ "name": "Durão",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Você aguenta mais do que devia. Você tem uma quarta caixa de condição física e só fica Quebrado fisicamente quando marcar a quinta. A quarta condição tira dados como as outras. (A ficha cria a quarta caixa automaticamente.)",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Herdeiro da Vigília, Oficial, Trabalhador",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_id": "ojpNIXslm5mWr1uE",
+ "_key": "!items!ojpNIXslm5mWr1uE",
+ "name": "Falsificador",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 para criar documentos, distintivos e identidades falsas (Manufatura ou Subterfúgio). Uma fachada com documento feito por você dá +2 em Persuadir em vez de +1.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Comunicador, Criminoso, Estudioso",
+  "pericia": "persuadir",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

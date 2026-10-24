@@ -1,0 +1,29 @@
+{
+ "_id": "aYwbJMyCzpjRwQP7",
+ "_key": "!items!aYwbJMyCzpjRwQP7",
+ "name": "Tempo Exato",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Você age na hora certa. Uma vez por combate, troque sua carta de iniciativa com a de qualquer participante, aliado ou inimigo, antes do turno dele.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Criminoso, Herdeiro da Vigília, Oficial",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "combate",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

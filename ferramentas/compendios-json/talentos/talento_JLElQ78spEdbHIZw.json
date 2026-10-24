@@ -1,0 +1,29 @@
+{
+ "_id": "JLElQ78spEdbHIZw",
+ "_key": "!items!JLElQ78spEdbHIZw",
+ "name": "Sonho Revelador",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Uma vez por caso, ao dormir, o Narrador mostra uma imagem verdadeira e fragmentada do Segredo ou do covil da criatura.",
+  "categoria": "ocupacao",
+  "ocupacao": "Sensitivo",
+  "especialidade": "Vidente",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "caso",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "41x3esncRYHBcNmw",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

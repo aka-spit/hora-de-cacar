@@ -1,0 +1,29 @@
+{
+ "_id": "0TGkJQ0VQJXVFF19",
+ "_key": "!items!0TGkJQ0VQJXVFF19",
+ "name": "Explicação Racional",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Persuadir para convencer testemunhas de que houve algo comum (gás, animal, surto).",
+  "categoria": "ocupacao",
+  "ocupacao": "Cientista",
+  "especialidade": "Cético",
+  "ocupacoesComuns": "",
+  "pericia": "persuadir",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "ECPsTBxMkbvtqv4t",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

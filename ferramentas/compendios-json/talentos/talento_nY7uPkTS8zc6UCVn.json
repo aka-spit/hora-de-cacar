@@ -1,0 +1,29 @@
+{
+ "_id": "nY7uPkTS8zc6UCVn",
+ "_key": "!items!nY7uPkTS8zc6UCVn",
+ "name": "Mãos Firmes",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Tratar um ferimento crítico em combate é uma ação rápida para você.",
+  "categoria": "ocupacao",
+  "ocupacao": "Médico",
+  "especialidade": "Socorrista",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "Dmvz6MoMIDi4mTLL",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

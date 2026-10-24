@@ -1,0 +1,29 @@
+{
+ "_id": "1TXpNoXtqRmDIX16",
+ "_key": "!items!1TXpNoXtqRmDIX16",
+ "name": "Hacker",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Você ganha +2 em Investigação para invadir sistemas, câmeras e celulares. Com uma cena e um notebook, consegue o histórico de localização de um telefone.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Cientista, Comunicador, Criminoso",
+  "pericia": "investigacao",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_id": "NRdiYKz7VsnBPsGI",
+ "_key": "!items!NRdiYKz7VsnBPsGI",
+ "name": "Capacete",
+ "type": "protecao",
+ "img": "icons/svg/shield.svg",
+ "system": {
+  "descricao": "De moto, de obra ou militar. Soma +1 à Proteção que você já usa (ou dá Proteção 1, se for a única). Se ficar Quebrado e o crítico físico for de cabeça (16, 54 ou 56), role de novo e fique com o segundo resultado.",
+  "disponibilidade": 1,
+  "peso": "leve",
+  "carregado": true,
+  "quantidade": 1,
+  "protecao": 1,
+  "penalidade": 0,
+  "capacete": true,
+  "equipada": true
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "fREmsiyEoTAQnFnT",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

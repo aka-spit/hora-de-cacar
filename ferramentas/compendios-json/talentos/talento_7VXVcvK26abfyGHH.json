@@ -1,0 +1,29 @@
+{
+ "_id": "7VXVcvK26abfyGHH",
+ "_key": "!items!7VXVcvK26abfyGHH",
+ "name": "Cético Teimoso",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Uma vez por sessão, repita um teste de Medo que falhou, sem custo (não é forçar). Vale o segundo resultado.",
+  "categoria": "ocupacao",
+  "ocupacao": "Cientista",
+  "especialidade": "Cético",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "sessao",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "ECPsTBxMkbvtqv4t",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

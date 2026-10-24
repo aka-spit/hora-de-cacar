@@ -1,0 +1,29 @@
+{
+ "_id": "Hw79nvmKaCFG5k2L",
+ "_key": "!items!Hw79nvmKaCFG5k2L",
+ "name": "Bênção",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Uma vez por sessão, antes da rolagem, abençoa um aliado na mesma zona, que recebe +2 num teste.",
+  "categoria": "ocupacao",
+  "ocupacao": "Religioso",
+  "especialidade": "Sacerdote",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "sessao",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "JE82UowmTHcBz7Ix",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_id": "OCHdIB0pW94aIKGv",
+ "_key": "!items!OCHdIB0pW94aIKGv",
+ "name": "Conhecimento Incomum",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Escolha um assunto estranho e específico, como trens, venenos, rádios antigos, igrejas coloniais, cemitérios ou quadrinhos de terror. Você ganha +2 em Estudos ou Ocultismo em testes ligados a ele. O Narrador dá uma informação extra quando o assunto aparecer no caso.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Cientista, Comunicador, Estudioso",
+  "pericia": "estudos",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

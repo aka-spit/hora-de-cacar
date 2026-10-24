@@ -1,0 +1,29 @@
+{
+ "_id": "nqyhrI4jQygWkMUo",
+ "_key": "!items!nqyhrI4jQygWkMUo",
+ "name": "Boa Gente",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "As pessoas gostam de você sem saber por quê. Você ganha +1 em Persuadir e Cultura com estranhos, e uma vez por sessão um PNJ comum oferece ajuda sem que você peça, como uma carona, um prato de comida ou uma informação.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Médico, Religioso, Trabalhador",
+  "pericia": "persuadir",
+  "bonus": 1,
+  "limite": "sessao",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_id": "gV48bL40wuh0icwx",
+ "_key": "!items!gV48bL40wuh0icwx",
+ "name": "Pé Firme",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Chão ruim não atrapalha você, seja lama, telhado molhado ou escada podre. Você ganha +2 em Atletismo para escalar e se equilibrar e nunca cai por causa do terreno.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Criminoso, Oficial, Trabalhador",
+  "pericia": "atletismo",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_id": "cfOI8KqMq4ELL8V3",
+ "_key": "!items!cfOI8KqMq4ELL8V3",
+ "name": "Guia Espiritual",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Um morto acompanha você. Pode ser uma avó, um amigo de infância ou um Caçador que você nem conheceu. Ele não luta nem toca em nada, mas uma vez por caso responde a uma pergunta com o que viu (e não com o que sabe). Às vezes ele some por dias, e às vezes volta com medo.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Herdeiro da Vigília, Religioso, Sensitivo",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "caso",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

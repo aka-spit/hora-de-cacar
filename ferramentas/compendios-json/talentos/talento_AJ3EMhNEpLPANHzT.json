@@ -1,0 +1,29 @@
+{
+ "_id": "AJ3EMhNEpLPANHzT",
+ "_key": "!items!AJ3EMhNEpLPANHzT",
+ "name": "Sangue-Frio",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Você já passou por maus bocados e hoje encara com naturalidade muita coisa que apavora os outros. Ganha +2 em testes de Medo. (Marcado sozinho no teste de Medo.)",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Herdeiro da Vigília, Médico, Oficial",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

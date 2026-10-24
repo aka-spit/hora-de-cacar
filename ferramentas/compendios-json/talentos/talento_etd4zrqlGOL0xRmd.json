@@ -1,0 +1,29 @@
+{
+ "_id": "etd4zrqlGOL0xRmd",
+ "_key": "!items!etd4zrqlGOL0xRmd",
+ "name": "Caçador Obstinado",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Escolha uma natureza de criatura: Monstros, Assombrações ou Entidades. Contra ela, você ganha +1 em Ocultismo para identificar e +1 de dano em qualquer ataque que acerte. Pode ser comprado de novo para outra natureza.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Herdeiro da Vigília, Oficial, Religioso",
+  "pericia": "ocultismo",
+  "bonus": 1,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

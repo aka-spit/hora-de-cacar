@@ -1,0 +1,29 @@
+{
+ "_id": "NUvL4DDHKqdNk7r3",
+ "_key": "!items!NUvL4DDHKqdNk7r3",
+ "name": "Esconderijo",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Além do QG, você tem um lugar seguro numa região, como o apartamento de uma tia, uma cabana ou um quarto nos fundos de uma oficina. Lá, o grupo cura condições como no QG e guarda até três itens. Se o esconderijo for descoberto, ele vira uma ameaça.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Comunicador, Criminoso, Herdeiro da Vigília",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

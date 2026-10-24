@@ -1,0 +1,30 @@
+{
+ "_id": "0bxjLEJWBebevAFX",
+ "_key": "!items!0bxjLEJWBebevAFX",
+ "name": "Coquetel molotov",
+ "type": "arma",
+ "img": "icons/svg/sword.svg",
+ "system": {
+  "descricao": "Garrafa, gasolina e um pano. O arremesso segue a regra de Explosões, inclusive o sorteio da zona na falha. Em vez de dano, deixa a zona em chamas até o fim da cena, e quem estava nela pega fogo numa pequena parte do corpo, a não ser que esquive (Atletismo) para fora da zona.",
+  "disponibilidade": 1,
+  "peso": "leve",
+  "carregado": true,
+  "quantidade": 1,
+  "dano": "Fogo",
+  "alcance": "1a2",
+  "bonus": 0,
+  "pericia": "pontaria",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KrrCayA3dK7x0rYS",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

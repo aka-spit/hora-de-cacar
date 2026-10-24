@@ -1,0 +1,29 @@
+{
+ "_id": "ptII9CqD7HyUECDW",
+ "_key": "!items!ptII9CqD7HyUECDW",
+ "name": "Reflexos de Quem Já Foi Emboscado",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Sempre que tirar carta de iniciativa, tire duas e fique com a melhor (a mais baixa). (O rastreador de combate faz isso sozinho.)",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Criminoso, Herdeiro da Vigília, Oficial",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

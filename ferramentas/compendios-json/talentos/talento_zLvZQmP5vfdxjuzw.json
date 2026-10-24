@@ -1,0 +1,29 @@
+{
+ "_id": "zLvZQmP5vfdxjuzw",
+ "_key": "!items!zLvZQmP5vfdxjuzw",
+ "name": "Destino",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Você ainda não pode morrer, porque alguma coisa tem planos para você. Uma vez por temporada, quando sofrer um ferimento crítico fatal, ele deixa de ser fatal. Ninguém sabe que planos são esses, e o Narrador vai cobrar a resposta no futuro.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Herdeiro da Vigília, Religioso, Sensitivo",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "temporada",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

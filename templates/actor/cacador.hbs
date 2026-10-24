@@ -1,0 +1,242 @@
+<div class="hdc-ficha dossie">
+  <header class="hdc-topo">
+    <div class="arquivo"><span>Arquivo da Vigília
+      <a class="cadeado {{#if travado}}fechado{{/if}}" data-action="cadeado" title="{{#if travado}}Ficha trancada: atributos e perícias bloqueados{{#unless podeDestravar}} (só o Narrador destrava){{/unless}}{{else}}Ficha aberta: clique para trancar atributos e perícias{{/if}}"><i class="fas {{#if travado}}fa-lock{{else}}fa-lock-open{{/if}}"></i> {{#if travado}}Trancada{{else}}Aberta{{/if}}</a></span><span class="num">Dossiê nº <input type="text" name="system.perfil.dossie" value="{{system.perfil.dossie}}"></span></div>
+    <div class="identificacao">
+      <div class="campos">
+        <h1 class="titulo"><input type="text" name="name" value="{{actor.name}}" placeholder="Nome do Caçador"></h1>
+        <div class="linha c2">
+          <label class="f"><span>Fachada / codinome</span><input type="text" name="system.perfil.fachada" value="{{system.perfil.fachada}}"></label>
+          <label class="f"><span>Jogador</span><input type="text" name="system.perfil.jogador" value="{{system.perfil.jogador}}"></label>
+        </div>
+        <div class="linha c2">
+          <label class="f"><span>Ocupação</span><input type="text" name="system.perfil.ocupacao" value="{{system.perfil.ocupacao}}"></label>
+          <label class="f"><span>Especialidade</span><input type="text" name="system.perfil.especialidade" value="{{system.perfil.especialidade}}"></label>
+        </div>
+        <div class="linha c3">
+          <label class="f"><span>Faixa</span><select name="system.perfil.faixa">{{#each opcoesFaixa}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+          <label class="f"><span>Idade</span><input type="text" name="system.perfil.idade" value="{{system.perfil.idade}}"></label>
+          <label class="f"><span>Idiomas</span><input type="text" name="system.perfil.idiomas" value="{{system.perfil.idiomas}}"></label>
+        </div>
+        <div class="linha recursos">
+          <span class="lbl">Recursos</span>
+          <span class="pontos">{{#each recursosPontos}}<a class="ponto {{#if on}}on{{/if}}" data-action="valor" data-campo="{{campo}}" data-n="{{n}}" title="{{n}}"></a>{{/each}}</span>
+          <span class="obs">{{system.recursos.value}} · {{padraoVida}} · Capital {{system.capital}}</span>
+          <a class="botao mini" data-action="recursos" title="Rolar Recursos antes do caso"><i class="fas fa-coins"></i> Rolar</a>
+        </div>
+      </div>
+      <div class="polaroid" data-action="editarImagem" data-edit="img" title="Trocar foto">
+        <img src="{{actor.img}}" alt="{{actor.name}}">
+        <div class="legenda">{{actor.name}}</div>
+      </div>
+    </div>
+  </header>
+
+  {{#unless system.perfil.ocupacao}}
+  <div class="aviso-criacao"><span>Ficha em branco.</span> <a class="botao vermelho" data-action="criacao"><i class="fas fa-user-pen"></i> Criar Caçador (passo a passo)</a></div>
+  {{/unless}}
+  <nav class="hdc-abas">
+    <a data-action="aba" data-aba="ficha">Perfil operacional</a>
+    <a data-action="aba" data-aba="equip">Armamento e equipamento</a>
+    <a data-action="aba" data-aba="talentos">Talentos e marcas</a>
+    <a data-action="aba" data-aba="pessoal">Personalidade</a>
+    <a data-action="aba" data-aba="diario">Diário e XP</a>
+  </nav>
+
+  <section class="hdc-corpo">
+    {{!-- ===================== PERFIL ===================== --}}
+    <div data-aba-conteudo="ficha">
+      <h2 class="sec">Atributos e perícias</h2>
+      <div class="atributos {{#if travado}}travado{{/if}}">
+        {{#each atributos}}
+        <div class="atributo">
+          <div class="attr-h">
+            <a class="rolavel" data-action="rolarAtributo" data-atributo="{{key}}" title="Rolar {{label}}">{{label}}</a>
+            <span class="pontos">{{#each pontos}}<a class="ponto {{#if on}}on{{/if}}" data-action="valor" data-campo="{{campo}}" data-n="{{n}}"></a>{{/each}}</span>
+          </div>
+          {{#each pericias}}
+          <div class="pericia {{#if vantagem}}vantagem{{/if}}">
+            <a class="rolavel" data-action="rolarPericia" data-pericia="{{key}}" title="Rolar {{label}}">{{label}}{{#if vantagem}} <i class="fas fa-star" title="Vantagem"></i>{{/if}}</a>
+            <span class="pontos">{{#each pontos}}<a class="ponto {{#if on}}on{{/if}}" data-action="valor" data-campo="{{campo}}" data-n="{{n}}"></a>{{/each}}</span>
+          </div>
+          {{/each}}
+        </div>
+        {{/each}}
+      </div>
+
+      <h2 class="sec">Estado de saúde</h2>
+      <div class="saude">
+        <div class="trilha">
+          <span class="lbl">Físico</span>
+          {{#each condFisica}}<a class="caixa {{#if on}}on{{/if}}" data-action="condicao" data-tipo="{{tipo}}" data-n="{{n}}"><i></i>{{nome}}</a>{{/each}}
+          <a class="caixa quebrado {{#if system.condicoes.quebradoFisico}}on{{/if}}" data-action="quebrado" data-tipo="fisica"><i></i>QUEBRADO</a>
+          <a class="botao mini" data-action="critico" data-tipo="fisica" title="Rolar ferimento crítico físico (D66)"><i class="fas fa-bone"></i> Crítico</a>
+        </div>
+        <div class="trilha">
+          <span class="lbl">Mental</span>
+          {{#each condMental}}<a class="caixa {{#if on}}on{{/if}}" data-action="condicao" data-tipo="{{tipo}}" data-n="{{n}}"><i></i>{{nome}}</a>{{/each}}
+          <a class="caixa quebrado {{#if system.condicoes.quebradoMental}}on{{/if}}" data-action="quebrado" data-tipo="mental"><i></i>QUEBRADO</a>
+          <a class="botao mini" data-action="critico" data-tipo="mental" title="Rolar ferimento crítico mental (D66)"><i class="fas fa-brain"></i> Crítico</a>
+        </div>
+        <p class="dica">Cada condição tira 1 dado dos atributos do mesmo tipo (físicas: FORÇA e AGILIDADE; mentais: RACIOCÍNIO e EMPATIA).</p>
+      </div>
+
+      <div class="acoes-rapidas">
+        <a class="botao" data-action="medo"><i class="fas fa-ghost"></i> Teste de Medo</a>
+        <a class="botao" data-action="diario"><i class="fas fa-book-skull"></i> Teste de diário</a>
+        <a class="botao" data-action="protecao"><i class="fas fa-shield-halved"></i> Proteção ({{system.protecaoTotal}})</a>
+        <a class="botao" data-action="desabafar"><i class="fas fa-pen-nib"></i> Desabafar</a>
+        <a class="botao discreto" data-action="criacao" title="Refazer a criação guiada"><i class="fas fa-user-pen"></i> Criação guiada</a>
+        <a class="botao discreto" data-action="novaSessao" title="Libera Vantagem, Registrar, Desabafar e Revelações"><i class="fas fa-rotate"></i> Nova sessão</a>
+      </div>
+
+      <div class="duas-colunas">
+        <div>
+          <h2 class="sec">Vantagem atual</h2>
+          <label class="f"><span>Cena da Estrada</span><input type="text" name="system.vantagem.descricao" value="{{system.vantagem.descricao}}" placeholder="treinou tiro no ferro-velho"></label>
+          <div class="linha c2">
+            <label class="f"><span>Perícia (+2)</span><select name="system.vantagem.pericia">{{#each opcoesPericiaVantagem}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+            <label class="chk"><input type="checkbox" name="system.vantagem.usada" {{checked system.vantagem.usada}}> Usada nesta sessão</label>
+          </div>
+        </div>
+        <div>
+          <h2 class="sec">Armas</h2>
+          <ul class="lista armas-resumo">
+            {{#each armas}}
+            <li data-item-id="{{item.id}}">
+              <a class="rolavel" data-action="ataque" title="Atacar"><i class="fas fa-crosshairs"></i> {{item.name}}</a>
+              <span class="det">dano {{s.dano}} · alc. {{s.alcance}} · {{#if s.bonus}}+{{s.bonus}}{{else}}—{{/if}}</span>
+            </li>
+            {{else}}<li class="vazio">Sem armas. Arraste do compêndio Arsenal.</li>{{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {{!-- ===================== EQUIPAMENTO ===================== --}}
+    <div data-aba-conteudo="equip">
+      <h2 class="sec">Armas <a class="add" data-action="criarItem" data-type="arma" title="Nova arma"><i class="fas fa-plus"></i></a></h2>
+      <table class="tabela">
+        <thead><tr><th>Arma</th><th>Dano</th><th>Alcance</th><th>Bônus</th><th>Perícia</th><th>Peso</th><th></th></tr></thead>
+        <tbody>
+          {{#each armas}}
+          <tr data-item-id="{{item.id}}">
+            <td><a class="rolavel" data-action="ataque"><img src="{{item.img}}" class="ico"> {{item.name}}</a>{{#if s.itemDePoder}} <a class="tag" data-action="itemPoder" title="Item de poder: rolar 1d6">poder</a>{{/if}}</td>
+            <td>{{s.dano}}</td><td>{{s.alcance}}</td><td>{{s.bonus}}</td><td>{{periciaLabel}}</td><td>{{s.peso}}</td>
+            <td class="ctrl"><a data-action="editarItem"><i class="fas fa-pen"></i></a> <a data-action="apagarItem"><i class="fas fa-trash"></i></a></td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+
+      <h2 class="sec">Proteções <a class="add" data-action="criarItem" data-type="protecao"><i class="fas fa-plus"></i></a></h2>
+      <table class="tabela">
+        <thead><tr><th>Proteção</th><th>Valor</th><th>Atletismo</th><th>Vestida</th><th></th></tr></thead>
+        <tbody>
+          {{#each protecoes}}
+          <tr data-item-id="{{id}}">
+            <td><img src="{{img}}" class="ico"> {{name}}</td>
+            <td>{{#if system.capacete}}+1{{else}}{{system.protecao}}{{/if}}</td>
+            <td>{{#if system.penalidade}}−{{system.penalidade}}{{else}}—{{/if}}</td>
+            <td><a data-action="alternarItem" data-campo="equipada" class="caixinha {{#if system.equipada}}on{{/if}}"></a></td>
+            <td class="ctrl"><a data-action="editarItem"><i class="fas fa-pen"></i></a> <a data-action="apagarItem"><i class="fas fa-trash"></i></a></td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+
+      <h2 class="sec">Equipamento <a class="add" data-action="criarItem" data-type="equipamento"><i class="fas fa-plus"></i></a></h2>
+      <table class="tabela">
+        <thead><tr><th>Item</th><th>Bônus</th><th>Uso</th><th>Qtd.</th><th>Carregado</th><th></th></tr></thead>
+        <tbody>
+          {{#each equipamentos}}
+          <tr data-item-id="{{id}}">
+            <td><a data-action="mostrarItem"><img src="{{img}}" class="ico"> {{name}}</a>{{#if system.itemDePoder}} <a class="tag" data-action="itemPoder" title="Item de poder: rolar 1d6">poder</a>{{/if}}</td>
+            <td>{{#if system.bonus}}+{{system.bonus}}{{else}}—{{/if}}</td><td>{{system.uso}}</td><td>{{system.quantidade}}</td>
+            <td><a data-action="alternarItem" data-campo="carregado" class="caixinha {{#if system.carregado}}on{{/if}}"></a></td>
+            <td class="ctrl"><a data-action="editarItem"><i class="fas fa-pen"></i></a> <a data-action="apagarItem"><i class="fas fa-trash"></i></a></td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      <p class="carga">Carga: <b>{{cargaTxt}}</b> itens (FORÇA × 2). {{#if sobrecargaTxt}}<span class="alerta">{{sobrecargaTxt}}</span>{{/if}}</p>
+    </div>
+
+    {{!-- ===================== TALENTOS E MARCAS ===================== --}}
+    <div data-aba-conteudo="talentos">
+      <h2 class="sec">Talentos <a class="add" data-action="criarItem" data-type="talento"><i class="fas fa-plus"></i></a></h2>
+      <ul class="lista cartoes">
+        {{#each talentos}}
+        <li data-item-id="{{id}}">
+          <div class="nome"><a data-action="mostrarItem">{{name}}</a>
+            {{#if system.limite}}<a data-action="alternarItem" data-campo="usado" class="caixinha {{#if system.usado}}on{{/if}}" title="Usado"></a>{{/if}}
+            <span class="ctrl"><a data-action="editarItem"><i class="fas fa-pen"></i></a> <a data-action="apagarItem"><i class="fas fa-trash"></i></a></span></div>
+          <div class="desc">{{system.descricao}}</div>
+        </li>
+        {{else}}<li class="vazio">Arraste talentos do compêndio Talentos.</li>{{/each}}
+      </ul>
+
+      <h2 class="sec">Lesões permanentes: Defeitos e Revelações <a class="add" data-action="criarItem" data-type="marca"><i class="fas fa-plus"></i></a></h2>
+      <ul class="lista cartoes">
+        {{#each marcas}}
+        <li data-item-id="{{id}}" class="marca {{system.tipo}}">
+          <div class="nome"><a data-action="mostrarItem">{{name}}</a> <span class="det">{{system.pericia}} {{system.mod}} · {{system.origem}}{{#if system.prazo}} · prazo {{system.prazo}}{{/if}}</span>
+            {{#if (eq system.tipo "revelacao")}}<a data-action="alternarItem" data-campo="usada" class="caixinha {{#if system.usada}}on{{/if}}" title="Usada nesta sessão"></a>{{/if}}
+            <span class="ctrl"><a data-action="editarItem"><i class="fas fa-pen"></i></a> <a data-action="apagarItem"><i class="fas fa-trash"></i></a></span></div>
+        </li>
+        {{else}}<li class="vazio">Nenhuma. Os ferimentos críticos criam as marcas sozinhos.</li>{{/each}}
+      </ul>
+      <div class="acoes-rapidas">
+        <a class="botao" data-action="recuperacao" data-tipo="fisica"><i class="fas fa-house-medical"></i> Recuperação física</a>
+        <a class="botao" data-action="recuperacao" data-tipo="mental"><i class="fas fa-house-chimney"></i> Recuperação mental</a>
+      </div>
+
+      <h2 class="sec">Ritos <a class="add" data-action="criarItem" data-type="rito"><i class="fas fa-plus"></i></a></h2>
+      <ul class="lista cartoes">
+        {{#each ritos}}
+        <li data-item-id="{{id}}"><div class="nome"><a data-action="mostrarItem">{{name}}</a> <span class="det">{{system.lingua}}</span>
+          <span class="ctrl"><a data-action="editarItem"><i class="fas fa-pen"></i></a> <a data-action="apagarItem"><i class="fas fa-trash"></i></a></span></div>
+          <div class="desc">{{system.descricao}}</div></li>
+        {{else}}<li class="vazio">Sem ritos aprendidos.</li>{{/each}}
+      </ul>
+    </div>
+
+    {{!-- ===================== PERSONALIDADE ===================== --}}
+    <div data-aba-conteudo="pessoal">
+      <h2 class="sec">Motivação declarada</h2>
+      <textarea name="system.perfil.motivacao" rows="2">{{system.perfil.motivacao}}</textarea>
+      <h2 class="sec">Primeiro contato: relato do incidente</h2>
+      <p class="dica">O que viu, o que perdeu, o que nunca contou.</p>
+      <textarea name="system.perfil.primeiroContato" rows="4">{{system.perfil.primeiroContato}}</textarea>
+      <h2 class="sec carimbo">Segredo sombrio: acesso restrito ao Narrador</h2>
+      <textarea name="system.perfil.segredo" rows="2">{{system.perfil.segredo}}</textarea>
+      <h2 class="sec">Associados conhecidos (relacionamentos e tensões)</h2>
+      <textarea name="system.perfil.relacionamentos" rows="4">{{system.perfil.relacionamentos}}</textarea>
+      <h2 class="sec">Descrição</h2>
+      <textarea name="system.perfil.descricao" rows="3">{{system.perfil.descricao}}</textarea>
+    </div>
+
+    {{!-- ===================== DIÁRIO E XP ===================== --}}
+    <div data-aba-conteudo="diario">
+      <div class="duas-colunas">
+        <div>
+          <h2 class="sec">Primeira página do diário</h2>
+          <textarea name="system.diario.primeiraPagina" rows="5">{{system.diario.primeiraPagina}}</textarea>
+          <label class="f"><span>Lembrança (D66)</span><input type="text" name="system.diario.lembranca" value="{{system.diario.lembranca}}"></label>
+          <label class="chk"><input type="checkbox" name="system.diario.registrarUsado" {{checked system.diario.registrarUsado}}> Registrar usado (+2)</label>
+          <label class="chk"><input type="checkbox" name="system.diario.desabafarUsado" {{checked system.diario.desabafarUsado}}> Desabafar usado (cura 2)</label>
+        </div>
+        <div>
+          <h2 class="sec">Experiência (5 XP = 1 Avanço)</h2>
+          <div class="xp"><span class="pontos">{{#each xpPontos}}<a class="ponto {{#if on}}on{{/if}}" data-action="valor" data-campo="{{campo}}" data-n="{{n}}"></a>{{/each}}</span>
+            <input type="number" name="system.xp.value" value="{{system.xp.value}}" min="0" class="curto"></div>
+          <ol class="perguntas">{{#each perguntasXP}}<li>{{this}}</li>{{/each}}</ol>
+          <p class="dica">Avanço: +1 numa perícia (máximo 5) ou um talento novo. Só no fim da sessão ou entre casos.</p>
+        </div>
+      </div>
+      <h2 class="sec">Notas de campo e recortes</h2>
+      <textarea name="system.perfil.notas" rows="8">{{system.perfil.notas}}</textarea>
+    </div>
+  </section>
+  <footer class="rodape">Documento de circulação restrita. Não copiar. Não fotografar. Queimar se comprometido.</footer>
+</div>

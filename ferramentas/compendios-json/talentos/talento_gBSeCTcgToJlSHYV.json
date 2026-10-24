@@ -1,0 +1,29 @@
+{
+ "_id": "gBSeCTcgToJlSHYV",
+ "_key": "!items!gBSeCTcgToJlSHYV",
+ "name": "Pressentimento",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Percepção para sentir presença sobrenatural ou perigo iminente.",
+  "categoria": "ocupacao",
+  "ocupacao": "Sensitivo",
+  "especialidade": "Vidente",
+  "ocupacoesComuns": "",
+  "pericia": "percepcao",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "41x3esncRYHBcNmw",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

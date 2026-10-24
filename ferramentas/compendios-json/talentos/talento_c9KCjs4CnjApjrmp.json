@@ -1,0 +1,29 @@
+{
+ "_id": "c9KCjs4CnjApjrmp",
+ "_key": "!items!c9KCjs4CnjApjrmp",
+ "name": "Identidade Alternativa",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Você mantém uma segunda vida pronta, com nome, documentos, endereço e perfil nas redes. Ganha +2 em Persuadir para sustentar essa vida, e uma vez por caso ela resolve uma burocracia (um hotel, um aluguel, uma visita na cadeia). Se você falhar feio em Persuadir usando essa identidade, a polícia começa a fazer perguntas.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Comunicador, Criminoso, Oficial",
+  "pericia": "persuadir",
+  "bonus": 2,
+  "limite": "caso",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

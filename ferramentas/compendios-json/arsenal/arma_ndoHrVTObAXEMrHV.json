@@ -1,0 +1,30 @@
+{
+ "_id": "ndoHrVTObAXEMrHV",
+ "_key": "!items!ndoHrVTObAXEMrHV",
+ "name": "Pé de cabra",
+ "type": "arma",
+ "img": "icons/svg/sword.svg",
+ "system": {
+  "descricao": "Abre portas, levanta tampas de túmulo e, se preciso, quebra joelhos. Conta como ferramenta (+1 em Força Bruta para arrombar) e como arma.",
+  "disponibilidade": 1,
+  "peso": "normal",
+  "carregado": true,
+  "quantidade": 1,
+  "dano": "1",
+  "alcance": "0",
+  "bonus": 1,
+  "pericia": "combate",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KrrCayA3dK7x0rYS",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

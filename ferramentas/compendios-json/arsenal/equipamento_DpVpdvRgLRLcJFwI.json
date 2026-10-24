@@ -1,0 +1,29 @@
+{
+ "_id": "DpVpdvRgLRLcJFwI",
+ "_key": "!items!DpVpdvRgLRLcJFwI",
+ "name": "Roupa de frio",
+ "type": "equipamento",
+ "img": "icons/svg/item-bag.svg",
+ "system": {
+  "descricao": "Vigor contra frio e chuva.",
+  "disponibilidade": 1,
+  "peso": "nenhum",
+  "carregado": true,
+  "quantidade": 1,
+  "bonus": 2,
+  "pericia": "vigor",
+  "uso": "Vigor contra frio e chuva",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KVKHVmnmsPWpsMti",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

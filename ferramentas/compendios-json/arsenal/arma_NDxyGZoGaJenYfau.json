@@ -1,0 +1,30 @@
+{
+ "_id": "NDxyGZoGaJenYfau",
+ "_key": "!items!NDxyGZoGaJenYfau",
+ "name": "Faca de prata ou ferro",
+ "type": "arma",
+ "img": "icons/svg/sword.svg",
+ "system": {
+  "descricao": "Lâmina banhada em prata ou forjada em ferro frio. Item de poder: role 1d6 a cada uso contra a criatura.",
+  "disponibilidade": 3,
+  "peso": "leve",
+  "carregado": true,
+  "quantidade": 1,
+  "dano": "1",
+  "alcance": "0",
+  "bonus": 1,
+  "pericia": "combate",
+  "itemDePoder": true
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KrrCayA3dK7x0rYS",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

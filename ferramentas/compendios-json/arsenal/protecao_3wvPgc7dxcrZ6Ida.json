@@ -1,0 +1,29 @@
+{
+ "_id": "3wvPgc7dxcrZ6Ida",
+ "_key": "!items!3wvPgc7dxcrZ6Ida",
+ "name": "Colete tático com placas",
+ "type": "protecao",
+ "img": "icons/svg/shield.svg",
+ "system": {
+  "descricao": "Feito para tiros de fuzil e criaturas grandes. Quase impossível de esconder e pesado demais para correr (−2 em Atletismo).",
+  "disponibilidade": 4,
+  "peso": "pesado",
+  "carregado": true,
+  "quantidade": 1,
+  "protecao": 6,
+  "penalidade": 2,
+  "capacete": false,
+  "equipada": true
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "fREmsiyEoTAQnFnT",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

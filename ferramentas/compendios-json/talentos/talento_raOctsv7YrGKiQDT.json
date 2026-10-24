@@ -1,0 +1,29 @@
+{
+ "_id": "raOctsv7YrGKiQDT",
+ "_key": "!items!raOctsv7YrGKiQDT",
+ "name": "Legista",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Investigação ao examinar um corpo. Você sempre descobre a causa real da morte.",
+  "categoria": "ocupacao",
+  "ocupacao": "Médico",
+  "especialidade": "Legista",
+  "ocupacoesComuns": "",
+  "pericia": "investigacao",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "Dmvz6MoMIDi4mTLL",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

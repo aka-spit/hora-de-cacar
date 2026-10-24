@@ -1,0 +1,101 @@
+<div class="hdc-ficha criatura">
+  <header class="hdc-topo compacto">
+    <div class="identificacao">
+      <div class="campos">
+        <h1 class="titulo"><input type="text" name="name" value="{{actor.name}}" placeholder="NOME DA CRIATURA"></h1>
+        <div class="linha c3">
+          <label class="f"><span>Natureza</span><select name="system.natureza">{{#each opcoesNatureza}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+          <label class="f"><span>Identificação</span><select name="system.modId">{{#each opcoesModId}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+          <label class="f"><span>Folclore</span><input type="text" name="system.folclore" value="{{system.folclore}}"></label>
+        </div>
+      </div>
+      <div class="polaroid pequena" data-action="editarImagem" data-edit="img"><img src="{{actor.img}}" alt="{{actor.name}}"></div>
+    </div>
+  </header>
+
+  <nav class="hdc-abas">
+    <a data-action="aba" data-aba="combate">Caixa de atributos</a>
+    <a data-action="aba" data-aba="lore">Pistas e Protocolo</a>
+  </nav>
+
+  <section class="hdc-corpo">
+    <div data-aba-conteudo="combate">
+      <div class="caixa-atributos">
+        {{#if ehAssombracao}}
+        <label class="stat"><span>Intensidade</span><select name="system.intensidade">{{#each opcoesIntensidade}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+        {{/if}}
+        <label class="stat"><span>Ferocidade</span><input type="number" name="system.ferocidade" value="{{system.ferocidade}}" min="1"></label>
+        <div class="stat vida"><span>Vida</span>
+          <div class="par"><input type="number" name="system.vida.value" value="{{system.vida.value}}" min="0"> / <input type="number" name="system.vida.max" value="{{system.vida.max}}" min="0"></div>
+          <a class="mini" data-action="curarVida" title="Restaurar Vida (volta na cena seguinte)"><i class="fas fa-rotate-left"></i></a>
+        </div>
+        <label class="stat"><span>Armadura</span><input type="number" name="system.armadura" value="{{system.armadura}}" min="0"></label>
+        <div class="stat"><span>Pavor X/Y</span>
+          <div class="par"><input type="number" name="system.pavor.primeiro" value="{{system.pavor.primeiro}}" min="0" max="3"> / <input type="number" name="system.pavor.seguintes" value="{{system.pavor.seguintes}}" min="0" max="3"></div>
+        </div>
+        <div class="stat"><a class="rolavel" data-action="rolarCriatura" data-attr="agilidade">AGILIDADE</a><input type="number" name="system.agilidade" value="{{system.agilidade}}" min="0"></div>
+        <div class="stat"><a class="rolavel" data-action="rolarCriatura" data-attr="percepcao">PERCEPÇÃO</a><input type="number" name="system.percepcao" value="{{system.percepcao}}" min="0"></div>
+      </div>
+      {{#if (eq system.vida.value 0)}}<p class="hdc-aviso">Vida 0 — {{system.vida0}}</p>{{/if}}
+
+      <div class="acoes-rapidas">
+        <a class="botao" data-action="medoCriatura"><i class="fas fa-ghost"></i> Anunciar (teste de Medo {{system.pavorAtual}})</a>
+        <label class="chk"><input type="checkbox" name="system.jaVista" {{checked system.jaVista}}> Já vista neste caso</label>
+        <a class="botao" data-action="comportamento"><i class="fas fa-dice"></i> Comportamento (d6)</a>
+        <a class="botao vermelho" data-action="ataqueAleatorio"><i class="fas fa-dice-d6"></i> Ataque (d6, sem repetir)</a>
+        <a class="botao" data-action="golpeCritico"><i class="fas fa-burst"></i> Golpe crítico</a>
+      </div>
+
+      <div class="duas-colunas">
+        <div>
+          <h2 class="sec">Habilidades</h2>
+          <textarea name="system.habilidades" rows="4">{{system.habilidades}}</textarea>
+        </div>
+        <div>
+          <h2 class="sec">Fraquezas</h2>
+          <textarea name="system.fraquezas" rows="2">{{system.fraquezas}}</textarea>
+          <label class="f"><span>Imunidades (só sofre dano de…)</span><input type="text" name="system.imunidades" value="{{system.imunidades}}"></label>
+        </div>
+      </div>
+
+      <h2 class="sec">D6 · Comportamento</h2>
+      <table class="tabela d6">
+        <tr><th>1 a 3</th><td><input type="text" name="system.comportamento.r13" value="{{system.comportamento.r13}}"></td></tr>
+        <tr><th>4 a 5</th><td><input type="text" name="system.comportamento.r45" value="{{system.comportamento.r45}}"></td></tr>
+        <tr><th>6</th><td><input type="text" name="system.comportamento.r6" value="{{system.comportamento.r6}}"></td></tr>
+      </table>
+
+      <h2 class="sec">D6 · Ataques característicos</h2>
+      <table class="tabela ataques">
+        <thead><tr><th>D6</th><th>Nome</th><th>Tipo</th><th title="Dados do ataque ou da Maldição">Dados</th><th title="Dano, nº de condições mentais ou Pavor">Dano</th><th title="Perícia para resistir (Maldição)">Resiste</th></tr></thead>
+        <tbody>
+          {{#each ataques}}
+          <tr class="{{#if ultimo}}ultimo{{/if}}">
+            <th><a class="rolavel" data-action="ataqueCriatura" data-n="{{n}}" title="Usar este ataque">{{n}}</a></th>
+            <td><input type="text" name="{{campo}}.nome" value="{{a.nome}}"></td>
+            <td><select name="{{campo}}.tipo">{{#each opcoesTipo}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></td>
+            <td><input type="number" name="{{campo}}.dados" value="{{a.dados}}" min="0" class="curto"></td>
+            <td><input type="number" name="{{campo}}.dano" value="{{a.dano}}" min="0" class="curto"></td>
+            <td><input type="text" name="{{campo}}.resistencia" value="{{a.resistencia}}" class="medio" placeholder="Vontade"></td>
+          </tr>
+          <tr class="desc-ataque"><td></td><td colspan="5"><input type="text" name="{{campo}}.descricao" value="{{a.descricao}}" placeholder="Efeito, alcance, regra especial…"></td></tr>
+          {{/each}}
+        </tbody>
+      </table>
+      <p class="dica">A criatura nunca repete o ataque da rodada anterior; o botão de d6 já pula para o seguinte. Em Vida 0: {{system.vida0}}</p>
+    </div>
+
+    <div data-aba-conteudo="lore">
+      <h2 class="sec">Apresentação</h2>
+      <textarea name="system.apresentacao" rows="5">{{system.apresentacao}}</textarea>
+      <h2 class="sec">Pistas</h2>
+      <label class="f"><span>Todo mundo sabe</span><textarea name="system.pistas.todos" rows="2">{{system.pistas.todos}}</textarea></label>
+      <label class="f"><span>O diário sabe</span><textarea name="system.pistas.diario" rows="3">{{system.pistas.diario}}</textarea></label>
+      <label class="f carimbo"><span>Segredo (nunca está no diário)</span><textarea name="system.pistas.segredo" rows="2">{{system.pistas.segredo}}</textarea></label>
+      <h2 class="sec">Protocolo</h2>
+      <textarea name="system.protocolo" rows="3">{{system.protocolo}}</textarea>
+      <h2 class="sec">Notas do Narrador</h2>
+      <textarea name="system.notas" rows="4">{{system.notas}}</textarea>
+    </div>
+  </section>
+</div>

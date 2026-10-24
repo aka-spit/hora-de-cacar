@@ -1,0 +1,29 @@
+{
+ "_id": "4mEZVqd1b28jsLz0",
+ "_key": "!items!4mEZVqd1b28jsLz0",
+ "name": "Faro de Notícia",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Investigação ao pesquisar jornais, redes e registros públicos.",
+  "categoria": "ocupacao",
+  "ocupacao": "Comunicador",
+  "especialidade": "Repórter",
+  "ocupacoesComuns": "",
+  "pericia": "investigacao",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "3N6x3HwiKxfPGpxK",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_id": "CCPB49gYOTDSdMRT",
+ "_key": "!items!CCPB49gYOTDSdMRT",
+ "name": "Luvas de couro",
+ "type": "equipamento",
+ "img": "icons/svg/item-bag.svg",
+ "system": {
+  "descricao": "Segurar ferro quente, prata e vidro, sem deixar digitais.",
+  "disponibilidade": 1,
+  "peso": "nenhum",
+  "carregado": true,
+  "quantidade": 1,
+  "bonus": 0,
+  "pericia": "",
+  "uso": "Segurar ferro quente, prata e vidro, sem deixar digitais",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KVKHVmnmsPWpsMti",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

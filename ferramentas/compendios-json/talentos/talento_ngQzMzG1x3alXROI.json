@@ -1,0 +1,29 @@
+{
+ "_id": "ngQzMzG1x3alXROI",
+ "_key": "!items!ngQzMzG1x3alXROI",
+ "name": "Linguista",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Você aprende dois idiomas mortos ou secretos (Cap. 2) e os lê e fala como quem estudou por anos. Ritos nessas línguas não sofrem penalidade, e textos nelas são lidos sem teste. Pode ser comprado de novo para outros idiomas.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Cientista, Estudioso, Religioso",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

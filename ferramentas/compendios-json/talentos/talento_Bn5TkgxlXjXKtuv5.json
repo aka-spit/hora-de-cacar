@@ -1,0 +1,29 @@
+{
+ "_id": "Bn5TkgxlXjXKtuv5",
+ "_key": "!items!Bn5TkgxlXjXKtuv5",
+ "name": "Leitor de Cicatrizes",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Percepção ao examinar alguém vivo, como mordidas, sinais de possessão e febres que não são febre.",
+  "categoria": "ocupacao",
+  "ocupacao": "Médico",
+  "especialidade": "Legista",
+  "ocupacoesComuns": "",
+  "pericia": "percepcao",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "Dmvz6MoMIDi4mTLL",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_id": "rfzgyCjAZUIbvgfl",
+ "_key": "!items!rfzgyCjAZUIbvgfl",
+ "name": "Ambidestro",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Você usa as duas mãos igualmente bem. Não sofre penalidade com a mão ruim e, com duas armas leves (faca, revólver, taco), pode fazer um ataque extra com a segunda arma como ação rápida, com −2 dados.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Criminoso, Herdeiro da Vigília, Oficial",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

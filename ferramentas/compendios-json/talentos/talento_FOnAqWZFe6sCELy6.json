@@ -1,0 +1,29 @@
+{
+ "_id": "FOnAqWZFe6sCELy6",
+ "_key": "!items!FOnAqWZFe6sCELy6",
+ "name": "Mãos Leves",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Subterfúgio para furtar, esconder ou plantar algo.",
+  "categoria": "ocupacao",
+  "ocupacao": "Criminoso",
+  "especialidade": "Ladrão",
+  "ocupacoesComuns": "",
+  "pericia": "subterfugio",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "owexFE3i3TGe0Rab",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

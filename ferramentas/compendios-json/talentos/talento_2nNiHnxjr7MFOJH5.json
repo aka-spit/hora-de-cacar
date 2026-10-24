@@ -1,0 +1,29 @@
+{
+ "_id": "2nNiHnxjr7MFOJH5",
+ "_key": "!items!2nNiHnxjr7MFOJH5",
+ "name": "Saber de Quintal",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Ocultismo com simpatias e ervas. Uma vez por caso, faz um patuá sem custo. Conhece Defumação da casa e Sono guardado.",
+  "categoria": "ocupacao",
+  "ocupacao": "Religioso",
+  "especialidade": "Benzedor",
+  "ocupacoesComuns": "",
+  "pericia": "ocultismo",
+  "bonus": 2,
+  "limite": "caso",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "JE82UowmTHcBz7Ix",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_id": "8HUbiFuVcNhXwqj3",
+ "_key": "!items!8HUbiFuVcNhXwqj3",
+ "name": "Arsenal no Porta-malas",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Uma vez por caso, a arma comum ou o item de poder que a cena pede (disp. até 2) está no seu carro.",
+  "categoria": "ocupacao",
+  "ocupacao": "Herdeiro da Vigília",
+  "especialidade": "Caçador de estrada",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "caso",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "SWsFLL7Dl2YMXjNf",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

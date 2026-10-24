@@ -1,0 +1,29 @@
+{
+ "_id": "WY6gTqlJbTQlFCLi",
+ "_key": "!items!WY6gTqlJbTQlFCLi",
+ "name": "Ler um Golpe",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Percepção para notar mentira, armadilha ou golpe.",
+  "categoria": "ocupacao",
+  "ocupacao": "Criminoso",
+  "especialidade": "Golpista",
+  "ocupacoesComuns": "",
+  "pericia": "percepcao",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "owexFE3i3TGe0Rab",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

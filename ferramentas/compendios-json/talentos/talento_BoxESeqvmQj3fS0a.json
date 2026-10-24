@@ -1,0 +1,29 @@
+{
+ "_id": "BoxESeqvmQj3fS0a",
+ "_key": "!items!BoxESeqvmQj3fS0a",
+ "name": "Escudo dos Inocentes",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Atletismo ou Força Bruta para tirar um inocente do perigo.",
+  "categoria": "ocupacao",
+  "ocupacao": "Oficial",
+  "especialidade": "Segurança",
+  "ocupacoesComuns": "",
+  "pericia": "atletismo",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "r2zRK9aRYNOfUAV8",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

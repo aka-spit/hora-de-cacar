@@ -1,0 +1,29 @@
+{
+ "_id": "nKNOaKEysLvCdNcp",
+ "_key": "!items!nKNOaKEysLvCdNcp",
+ "name": "Contato na Rede",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Uma vez por caso, um Caçador amigo faz um favor sem rolagem: vigia alguém, empresta uma arma ou liga para um conhecido. Só que ele vai cobrar depois, e o Narrador decide quando.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Criminoso, Herdeiro da Vigília, Religioso",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "caso",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

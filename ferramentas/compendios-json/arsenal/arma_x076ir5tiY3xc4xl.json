@@ -1,0 +1,30 @@
+{
+ "_id": "x076ir5tiY3xc4xl",
+ "_key": "!items!x076ir5tiY3xc4xl",
+ "name": "Besta",
+ "type": "arma",
+ "img": "icons/svg/sword.svg",
+ "system": {
+  "descricao": "Silenciosa e recarregável, com virotes de madeira, prata ou ferro. Recarregar é ação lenta.",
+  "disponibilidade": 3,
+  "peso": "pesado",
+  "carregado": true,
+  "quantidade": 1,
+  "dano": "2",
+  "alcance": "0a2",
+  "bonus": 1,
+  "pericia": "pontaria",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KrrCayA3dK7x0rYS",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

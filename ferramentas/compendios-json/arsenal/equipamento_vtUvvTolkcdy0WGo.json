@@ -1,0 +1,29 @@
+{
+ "_id": "vtUvvTolkcdy0WGo",
+ "_key": "!items!vtUvvTolkcdy0WGo",
+ "name": "Botas de trabalho",
+ "type": "equipamento",
+ "img": "icons/svg/item-bag.svg",
+ "system": {
+  "descricao": "Atletismo em lama, mata e entulho.",
+  "disponibilidade": 1,
+  "peso": "nenhum",
+  "carregado": true,
+  "quantidade": 1,
+  "bonus": 1,
+  "pericia": "atletismo",
+  "uso": "Atletismo em lama, mata e entulho",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KVKHVmnmsPWpsMti",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

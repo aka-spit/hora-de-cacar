@@ -1,0 +1,29 @@
+{
+ "_id": "lAGgcaZ5CjIb9qGa",
+ "_key": "!items!lAGgcaZ5CjIb9qGa",
+ "name": "Olhos Abertos",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Percepção para notar ameaças humanas. Humanos nunca pegam você de emboscada.",
+  "categoria": "ocupacao",
+  "ocupacao": "Oficial",
+  "especialidade": "Segurança",
+  "ocupacoesComuns": "",
+  "pericia": "percepcao",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "r2zRK9aRYNOfUAV8",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

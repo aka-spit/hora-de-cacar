@@ -1,0 +1,29 @@
+{
+ "_id": "MRpgrA3mZ2smG6dC",
+ "_key": "!items!MRpgrA3mZ2smG6dC",
+ "name": "Roupa de festa",
+ "type": "equipamento",
+ "img": "icons/svg/item-bag.svg",
+ "system": {
+  "descricao": "Cultura e Persuadir em eventos sociais.",
+  "disponibilidade": 2,
+  "peso": "nenhum",
+  "carregado": true,
+  "quantidade": 1,
+  "bonus": 1,
+  "pericia": "persuadir",
+  "uso": "Cultura e Persuadir em eventos sociais",
+  "itemDePoder": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "KVKHVmnmsPWpsMti",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

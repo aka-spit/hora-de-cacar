@@ -1,0 +1,29 @@
+{
+ "_id": "tszJkk6T4QPxUTvx",
+ "_key": "!items!tszJkk6T4QPxUTvx",
+ "name": "Diploma",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Você estudou a sério. Escolha uma área (direito, história, química, engenharia, teologia, biologia, arquitetura). Você ganha +2 em Estudos sobre ela e sabe como funcionam as instituições ligadas a essa área.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Cientista, Estudioso, Médico",
+  "pericia": "estudos",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

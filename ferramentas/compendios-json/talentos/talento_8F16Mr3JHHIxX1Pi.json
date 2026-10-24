@@ -1,0 +1,29 @@
+{
+ "_id": "8F16Mr3JHHIxX1Pi",
+ "_key": "!items!8F16Mr3JHHIxX1Pi",
+ "name": "Poliglota",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Você aprende dois idiomas vivos à sua escolha (Cap. 2) e fala como quem morou fora. Com estrangeiros, ganha +1 em Persuadir e Cultura. Pode ser comprado de novo para mais dois idiomas.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Comunicador, Criminoso, Estudioso",
+  "pericia": "persuadir",
+  "bonus": 1,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

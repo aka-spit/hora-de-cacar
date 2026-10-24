@@ -1,0 +1,29 @@
+{
+ "_id": "qEH5i4Eec2ohJxSE",
+ "_key": "!items!qEH5i4Eec2ohJxSE",
+ "name": "Criado na Estrada",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "+2 em Ocultismo para identificar uma criatura pelas vítimas, rastros ou sinais.",
+  "categoria": "ocupacao",
+  "ocupacao": "Herdeiro da Vigília",
+  "especialidade": "Caçador de estrada",
+  "ocupacoesComuns": "",
+  "pericia": "ocultismo",
+  "bonus": 2,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "SWsFLL7Dl2YMXjNf",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_id": "b89l3RW7sRpVJCSp",
+ "_key": "!items!b89l3RW7sRpVJCSp",
+ "name": "Colete balístico",
+ "type": "protecao",
+ "img": "icons/svg/shield.svg",
+ "system": {
+  "descricao": "Usado debaixo da camisa, segura tiro de pistola e garra de lobisomem, mas pesa e esquenta (−1 em Atletismo).",
+  "disponibilidade": 3,
+  "peso": "normal",
+  "carregado": true,
+  "quantidade": 1,
+  "protecao": 4,
+  "penalidade": 1,
+  "capacete": false,
+  "equipada": true
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "fREmsiyEoTAQnFnT",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

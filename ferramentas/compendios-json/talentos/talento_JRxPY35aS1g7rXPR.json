@@ -1,0 +1,29 @@
+{
+ "_id": "JRxPY35aS1g7rXPR",
+ "_key": "!items!JRxPY35aS1g7rXPR",
+ "name": "Devoto",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Escolha uma pessoa: um filho, um irmão, um companheiro de estrada. Em qualquer teste feito para proteger essa pessoa, você ganha +2. Se ela morrer, troque este talento por Sangue-Frio ou Teimoso.",
+  "categoria": "geral",
+  "ocupacao": "",
+  "especialidade": "",
+  "ocupacoesComuns": "Oficial, Religioso, Trabalhador",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "0XYxvZkp7RTjkzZE",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

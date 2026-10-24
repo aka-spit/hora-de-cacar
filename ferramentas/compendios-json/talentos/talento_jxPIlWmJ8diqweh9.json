@@ -1,0 +1,29 @@
+{
+ "_id": "jxPIlWmJ8diqweh9",
+ "_key": "!items!jxPIlWmJ8diqweh9",
+ "name": "Canal",
+ "type": "talento",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "descricao": "Uma vez por sessão, uma Assombração presente fala pela sua boca por uma cena, com sinceridade. Você marca uma condição mental.",
+  "categoria": "ocupacao",
+  "ocupacao": "Sensitivo",
+  "especialidade": "Médium",
+  "ocupacoesComuns": "",
+  "pericia": "",
+  "bonus": 0,
+  "limite": "sessao",
+  "usado": false
+ },
+ "effects": [],
+ "flags": {},
+ "folder": "41x3esncRYHBcNmw",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "_stats": {
+  "systemId": "hora-de-cacar",
+  "systemVersion": "0.1.0"
+ }
+}

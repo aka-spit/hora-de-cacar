@@ -9,14 +9,14 @@ const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ActorSheetV2, ItemSheetV2 } = foundry.applications.sheets;
 const T = (p) => `systems/${SYSTEM_ID}/templates/${p}`;
 
-const opcoes = (obj, atual) =>
+export const opcoes = (obj, atual) =>
   Object.entries(obj).map(([k, v]) => ({ value: k, label: typeof v === "string" ? v : v.label, selected: String(k) === String(atual) }));
 
 function pontos(valor, max, campo) {
   return Array.from({ length: max }, (_, i) => ({ n: i + 1, on: i < valor, campo }));
 }
 
-function abrirImagem(doc, campo = "img") {
+export function abrirImagem(doc, campo = "img") {
   const FP = foundry.applications.apps?.FilePicker?.implementation ?? globalThis.FilePicker;
   const fp = new FP({ type: "image", current: foundry.utils.getProperty(doc, campo), callback: (path) => doc.update({ [campo]: path }) });
   return fp.browse();
@@ -26,7 +26,7 @@ function abrirImagem(doc, campo = "img") {
 /*  Base de ator                                */
 /* ============================================ */
 
-class HDCActorSheetBase extends HandlebarsApplicationMixin(ActorSheetV2) {
+export class HDCActorSheetBase extends HandlebarsApplicationMixin(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
     classes: ["hora-de-cacar", "hdc-sheet", "actor"],
     position: { width: 820, height: 880 },

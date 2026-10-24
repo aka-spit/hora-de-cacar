@@ -1,5 +1,11 @@
 # Histórico de versões
 
+## 0.4.0
+- Ficha do QG (novo tipo de ator): Melhorias do Cap. 7 com custo, pré-requisito e efeito; compra que desconta os pontos e rola a ameaça em segredo para o Narrador; perguntas de Desenvolvimento; relógios de ameaça de três fatias; planta, equipamento guardado, contatos e registro da temporada.
+- Ficha do Carro (novo tipo de ator): tipo do Cap. 6 com valores típicos, qualidade, bônus, assentos, carga, manutenção, estado (bom/avariado/quebrado), porta-malas preparado, porta-malas com itens, rolagem de viagem 2D6 com a tabela de problemas, Pilotagem com o bônus do carro, conserto na estrada e marcador de perseguição.
+- Compêndio novo: Caçadores prontos — 10 personagens, um por ocupação (6 de meia-idade, 2 jovens e 2 idosos), dentro das regras de criação, com talento, equipamento, Primeiro Contato, segredo, relacionamentos entre eles, diário e lembrança.
+- Compêndio novo: QG e Veículos — Hotel Lanterna Azul pronto, um modelo de cada veículo do Cap. 6, o Opala do Raul e a caminhonete do Tonhão.
+
 ## 0.3.1
 - Compêndio novo: O Brinquedo da Praça (aventura). Elenco de Vila Figueira com 12 PNJs (prefeito Otávio, Lúcia, Dona Ercília, Delegado Tavares, Zé do Ferro, Dona Ruth, Padre Miguel, Marta, Neco, Davi, Lívia e o corretor da Feira), cada um com mentira de proteção, como conduzir e as pistas que guarda (cavalinho de Bento, diário de Dona Leonor, caderno de 1890, inquérito de 1962...).
 - Criaturas da aventura: A Mãe da Figueira (com as notas de condução) e Bento.

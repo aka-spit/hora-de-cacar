@@ -7,6 +7,7 @@ import * as models from "./models.mjs";
 import { HDCActor } from "./actor.mjs";
 import { HDCCombat, registrarHooksCombate } from "./combat.mjs";
 import { CacadorSheet, PnjSheet, CriaturaSheet, HDCItemSheet } from "./sheets.mjs";
+import { QgSheet, VeiculoSheet } from "./sheets-qg.mjs";
 import { forcar, alvosAtuais, atorDoUsuario, cartaoSimples, rolarFormula, mostrarDados, esc } from "./dice.mjs";
 import { CRITICOS } from "./criticos.mjs";
 import { abrirCriacao } from "./criacao.mjs";
@@ -22,7 +23,9 @@ const ICONES = {
   rito: `${A}/rito-prayer.svg`,
   cacador: "icons/svg/mystery-man.svg",
   pnj: `${A}/pnj-person.svg`,
-  criatura: `${A}/criatura-ghost.svg`
+  criatura: `${A}/criatura-ghost.svg`,
+  qg: `${A}/qg-house.svg`,
+  veiculo: `${A}/veiculo-city-car.svg`
 };
 
 Hooks.once("init", () => {
@@ -37,7 +40,9 @@ Hooks.once("init", () => {
   Object.assign(CONFIG.Actor.dataModels, {
     cacador: models.CacadorData,
     pnj: models.PnjData,
-    criatura: models.CriaturaData
+    criatura: models.CriaturaData,
+    qg: models.QgData,
+    veiculo: models.VeiculoData
   });
   Object.assign(CONFIG.Item.dataModels, {
     arma: models.ArmaData,
@@ -51,7 +56,9 @@ Hooks.once("init", () => {
   CONFIG.Actor.trackableAttributes = {
     cacador: { bar: [], value: ["condicoes.fisica.value", "condicoes.mental.value", "xp.value"] },
     pnj: { bar: [], value: ["resistencia.fisica.dano", "resistencia.mental.dano"] },
-    criatura: { bar: ["vida"], value: ["armadura", "ferocidade"] }
+    criatura: { bar: ["vida"], value: ["armadura", "ferocidade"] },
+    qg: { bar: [], value: ["desenvolvimento"] },
+    veiculo: { bar: [], value: ["qualidade", "bonus"] }
   };
 
   // Iniciativa por cartas (fallback se algo chamar a fórmula diretamente)
@@ -65,6 +72,8 @@ Hooks.once("init", () => {
   Actors.registerSheet(SYSTEM_ID, CacadorSheet, { types: ["cacador"], makeDefault: true, label: "Dossiê de Caçador" });
   Actors.registerSheet(SYSTEM_ID, PnjSheet, { types: ["pnj"], makeDefault: true, label: "Ficha de PNJ" });
   Actors.registerSheet(SYSTEM_ID, CriaturaSheet, { types: ["criatura"], makeDefault: true, label: "Ficha de Criatura" });
+  Actors.registerSheet(SYSTEM_ID, QgSheet, { types: ["qg"], makeDefault: true, label: "Ficha do QG" });
+  Actors.registerSheet(SYSTEM_ID, VeiculoSheet, { types: ["veiculo"], makeDefault: true, label: "Ficha do Carro" });
   Items.registerSheet(SYSTEM_ID, HDCItemSheet, { makeDefault: true, label: "Ficha de Item" });
 
   if (yzeCombatAtivo()) integrarYearZeroCombat();
@@ -86,6 +95,8 @@ Hooks.once("init", () => {
     `systems/${SYSTEM_ID}/templates/actor/cacador.hbs`,
     `systems/${SYSTEM_ID}/templates/actor/pnj.hbs`,
     `systems/${SYSTEM_ID}/templates/actor/criatura.hbs`,
+    `systems/${SYSTEM_ID}/templates/actor/qg.hbs`,
+    `systems/${SYSTEM_ID}/templates/actor/veiculo.hbs`,
     `systems/${SYSTEM_ID}/templates/item/item.hbs`
   ]);
 
@@ -129,7 +140,11 @@ async function autoteste() {
   ok(cac.system.condicoes.fisica.max === 4, "Durão cria a 4ª caixa física");
   ok(cac.system.capital === 1, "Capital = Recursos − 2");
 
-  for (const a of [cac, pnj, cri]) {
+  const qg = await tenta("Criar QG", () => Actor.create({ name: "QG (teste)", type: "qg", folder: pasta.id }));
+  const carro = await tenta("Criar Carro", () => Actor.create({ name: "Carro (teste)", type: "veiculo", folder: pasta.id, system: { estado: "avariado" } }));
+  if (qg) ok(qg.system.melhorias.arquivo && qg.system.melhorias.veterano, "QG começa com Arquivo do Veterano e O Veterano");
+  if (carro) ok(carro.system.bonusEfetivo === 0, "Carro avariado perde o bônus de Pilotagem");
+  for (const a of [cac, pnj, cri, qg, carro].filter(Boolean)) {
     await tenta(`Abrir ficha de ${a.type}`, async () => { await a.sheet.render({ force: true }); await new Promise((res) => setTimeout(res, 400)); const el = a.sheet.element; await a.sheet.close(); return !!el; });
   }
   const item = cac.items.find((i) => i.type === "arma");
@@ -296,6 +311,20 @@ async function acaoChat(acao, d, message) {
       const a = atorDoUsuario();
       if (!a || a.type !== "cacador") return ui.notifications.warn("Selecione o token do seu Caçador (ou defina seu personagem nas configurações de usuário).");
       return a.rolarMedo(Number(d.pavor) || 1, d.origem ?? "");
+    }
+
+    case "carro-estado": {
+      const carro = await fromUuid(d.uuid);
+      if (!carro?.isOwner) return ui.notifications.warn("Sem permissão para alterar este carro.");
+      await carro.update({ "system.estado": d.estado });
+      return ui.notifications.info(`${carro.name}: ${d.estado}.`);
+    }
+
+    case "carro-conserto": {
+      const a = atorDoUsuario();
+      if (!a || a.type !== "cacador") return ui.notifications.warn("Selecione o token do seu Caçador.");
+      return a.rolarTeste({ pericia: "manufatura", titulo: "Conserto na estrada", dificuldade: Number(d.dif) || 1,
+        nota: "Precisa de caixa de ferramentas. O sucesso não paga o conserto: só faz o carro andar até a próxima cidade, avariado." });
     }
 
     case "resistir": {

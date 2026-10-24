@@ -292,12 +292,17 @@ export async function forcar(message, { livre = false } = {}) {
 /* -------------------------------------------- */
 
 /** Cartão simples (texto + dados opcionais). */
-export async function cartaoSimples({ actor, titulo, html, roll = null, flags = {} }) {
+export async function cartaoSimples({ actor, titulo, html, roll = null, flags = {}, soNarrador = false }) {
   const chatData = {
     speaker: ChatMessage.getSpeaker({ actor }),
     content: `<div class="hdc-card simples"><header><h3>${esc(titulo)}</h3></header>${html}</div>`,
     flags: { [SYSTEM_ID]: { tipo: "simples", actorUuid: actor?.uuid ?? null, ...flags } }
   };
+  if (soNarrador) {
+    chatData.whisper = game.users.filter((u) => u.isGM).map((u) => u.id);
+    if (roll) chatData.rolls = [roll];
+    return ChatMessage.create(chatData);
+  }
   if (roll) {
     chatData.rolls = [roll];
     return ChatMessage.create(aplicarModo(chatData));

@@ -1,0 +1,65 @@
+<div class="hdc-ficha veiculo-ficha">
+  <header class="hdc-topo compacto">
+    <div class="arquivo"><span>Arquivo da Vigília</span><span>Ficha do Carro</span></div>
+    <div class="identificacao">
+      <div class="campos">
+        <h1 class="titulo"><input type="text" name="name" value="{{actor.name}}" placeholder="Nome do carro"></h1>
+        <div class="linha c2">
+          <label class="f"><span>Tipo (Cap. 6) <a class="mini-link" data-action="aplicarTipo" title="Aplicar os valores típicos deste tipo"><i class="fas fa-wand-magic-sparkles"></i></a></span>
+            <select name="system.tipo">{{#each opcoesTipo}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+          <div class="f"><span>Qualidade</span>
+            <span class="pontos">{{#each qualidades}}<a class="ponto {{#if on}}on{{/if}}" data-action="qualidade" data-q="{{q}}" title="{{label}}"></a>{{/each}}</span>
+            <small class="obs">{{qualidadeTxt}}</small></div>
+        </div>
+      </div>
+      <div class="polaroid pequena" data-action="editarImagem" data-edit="img"><img src="{{actor.img}}" alt="{{actor.name}}"></div>
+    </div>
+  </header>
+
+  <section class="hdc-corpo">
+    <div class="caixa-atributos">
+      <label class="stat"><span>Bônus de Pilotagem</span><input type="number" name="system.bonus" value="{{system.bonus}}"></label>
+      <label class="stat"><span>Assentos</span><input type="text" name="system.assentos" value="{{system.assentos}}" class="medio"></label>
+      <label class="stat"><span>Carga (itens)</span><input type="number" name="system.carga" value="{{system.carga}}" min="0"></label>
+      <label class="stat"><span>Manutenção mensal</span><input type="number" name="system.manutencao" value="{{system.manutencao}}" min="0"></label>
+    </div>
+    {{#if system.notaTipo}}<p class="dica">{{system.notaTipo}}</p>{{/if}}
+
+    <h2 class="sec">Estado</h2>
+    <div class="saude"><div class="trilha">
+      {{#each estados}}<a class="caixa {{#if on}}on{{/if}}" data-action="estado" data-k="{{k}}"><i></i>{{v}}</a>{{/each}}
+      <label class="chk"><input type="checkbox" name="system.portaMalas" {{checked system.portaMalas}}> Porta-malas preparado (+1 Persuadir em blitz)</label>
+    </div></div>
+
+    <div class="acoes-rapidas">
+      <a class="botao vermelho" data-action="viagem"><i class="fas fa-road"></i> Rolagem de viagem (2D6)</a>
+      <a class="botao" data-action="pilotar"><i class="fas fa-car"></i> Pilotagem{{#if system.bonusEfetivo}} (+{{system.bonusEfetivo}}){{/if}}</a>
+      <a class="botao" data-action="conserto"><i class="fas fa-wrench"></i> Consertar na estrada</a>
+    </div>
+
+    <h2 class="sec">Perseguição</h2>
+    <div class="perseguicao">
+      <label class="f curto-sel"><span>Distância</span><select name="system.perseguicao.distancia">{{#each opcoesDistancia}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <div class="corrida"><span class="lbl">Vocês</span>{{#each corrida.nos}}<a class="fatia {{#if on}}on{{/if}}" data-action="corrida" data-lado="nos" data-i="{{i}}"></a>{{/each}}</div>
+      <div class="corrida"><span class="lbl">Eles</span>{{#each corrida.eles}}<a class="fatia eles {{#if on}}on{{/if}}" data-action="corrida" data-lado="eles" data-i="{{i}}"></a>{{/each}}</div>
+      <a class="botao discreto" data-action="zerarCorrida"><i class="fas fa-rotate-left"></i> Zerar</a>
+      {{#if corrida.fim}}<span class="alerta">{{corrida.fim}}</span>{{/if}}
+    </div>
+    <p class="dica">A cada rodada, os dois lados rolam (Pilotagem + bônus do veículo; a pé, Atletismo; criaturas, AGILIDADE) e somam os sucessos. Forçar deixa o carro avariado. Manobra arriscada: com ao menos um sucesso, +2.</p>
+
+    <h2 class="sec">Defeito e personalidade do carro</h2>
+    <input type="text" name="system.defeito" value="{{system.defeito}}" placeholder="O rádio que liga sozinho, a porta que não tranca...">
+
+    <h2 class="sec">No porta-malas <a class="add" data-action="criarItem" data-type="equipamento"><i class="fas fa-plus"></i></a></h2>
+    <p class="carga">Carga: <b>{{cargaTxt}}</b> itens {{#if sobrecarga}}<span class="alerta">acima da capacidade</span>{{/if}} · arraste itens para cá</p>
+    <ul class="lista armas-resumo">
+      {{#each itensPortaMalas}}
+      <li data-item-id="{{id}}"><a data-action="mostrarItem"><img src="{{img}}" class="ico"> {{name}}</a> <span class="det">{{system.peso}}</span>
+        <span class="ctrl"><a data-action="editarItem"><i class="fas fa-pen"></i></a> <a data-action="apagarItem"><i class="fas fa-trash"></i></a></span></li>
+      {{else}}<li class="vazio">Porta-malas vazio.</li>{{/each}}
+    </ul>
+
+    <h2 class="sec">Notas</h2>
+    <textarea name="system.notas" rows="4">{{system.notas}}</textarea>
+  </section>
+</div>

@@ -1,0 +1,95 @@
+<div class="hdc-ficha qg-ficha">
+  <header class="hdc-topo compacto">
+    <div class="arquivo"><span>Arquivo da Vigília</span><span>Ficha do QG</span></div>
+    <div class="identificacao">
+      <div class="campos">
+        <h1 class="titulo"><input type="text" name="name" value="{{actor.name}}" placeholder="Nome do lugar"></h1>
+        <div class="linha c2">
+          <label class="f"><span>Tipo</span><input type="text" name="system.tipo" value="{{system.tipo}}"></label>
+          <label class="f"><span>Fachada (história de cobertura)</span><input type="text" name="system.fachada" value="{{system.fachada}}"></label>
+        </div>
+        <div class="linha c2">
+          <label class="f"><span>Veterano <a class="mini-link" data-action="veteranoD6" title="Rolar 1d6 na tabela de Veteranos"><i class="fas fa-dice-six"></i></a></span><input type="text" name="system.veterano" value="{{system.veterano}}"></label>
+          <label class="f carimbo-campo"><span>O que o Veterano esconde (Narrador)</span><input type="text" name="system.veteranoSegredo" value="{{system.veteranoSegredo}}"></label>
+        </div>
+      </div>
+      <div class="polaroid pequena" data-action="editarImagem" data-edit="img"><img src="{{actor.img}}" alt="{{actor.name}}"></div>
+    </div>
+  </header>
+
+  <nav class="hdc-abas">
+    <a data-action="aba" data-aba="melhorias">Melhorias</a>
+    <a data-action="aba" data-aba="ameacas">Ameaças</a>
+    <a data-action="aba" data-aba="planta">Planta e equipamento</a>
+    <a data-action="aba" data-aba="temporada">Contatos e temporada</a>
+  </nav>
+
+  <section class="hdc-corpo">
+    <div data-aba-conteudo="melhorias">
+      <div class="desenvolvimento">
+        <span class="lbl">Pontos de Desenvolvimento</span>
+        <span class="pontos">{{#each pontos}}<a class="ponto {{#if on}}on{{/if}}" data-action="pontos" data-n="{{n}}"></a>{{/each}}</span>
+        <b class="total">{{system.desenvolvimento}}</b>
+        <a class="botao" data-action="perguntas"><i class="fas fa-list-check"></i> Volta ao QG: perguntas</a>
+        <a class="botao discreto" data-action="novaVolta" title="Zera o contador de Melhorias compradas nesta volta">Compradas nesta volta: {{system.comprasVolta}}</a>
+      </div>
+      <p class="dica">Clique numa Melhoria para comprar (desconta pontos e o Narrador rola a ameaça em segredo). Clique de novo para desmarcar.</p>
+      <div class="melhorias">
+        {{#each grupos}}
+        <div class="grupo">
+          <h2 class="sec">{{label}}</h2>
+          <ul class="lista melhoria-lista">
+            {{#each itens}}
+            <li class="{{#if on}}tem{{/if}}">
+              <a class="caixa {{#if on}}on{{/if}}" data-action="melhoria" data-key="{{key}}"><i></i>{{label}}</a>
+              <span class="custo">{{custoTxt}}</span>
+              <div class="efeito">{{efeito}}{{#if preTxt}} <em>({{preTxt}})</em>{{/if}}</div>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <div data-aba-conteudo="ameacas">
+      <h2 class="sec">Relógios de ameaça <a class="add" data-action="rolarAmeaca" title="Rolar ameaça manualmente"><i class="fas fa-dice"></i></a></h2>
+      <p class="dica">Cada relógio avança uma fatia ao fim de cada caso em que o grupo não fizer nada contra a ameaça. Na terceira fatia, a ameaça chega ao QG.</p>
+      <table class="tabela ameacas">
+        <thead><tr><th>Ameaça</th><th>Relógio</th></tr></thead>
+        <tbody>
+          {{#each ameacas}}
+          <tr>
+            <td><input type="text" name="{{campo}}.nome" value="{{a.nome}}" placeholder="—"> <a class="mini-link" data-action="ameacaSugerida" data-n="{{n}}" title="Sugerir uma ameaça do livro"><i class="fas fa-lightbulb"></i></a></td>
+            <td class="relogio">{{#each fatias}}<a class="fatia {{#if on}}on{{/if}}" data-action="fatia" data-n="{{../n}}" data-f="{{f}}"></a>{{/each}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+
+    <div data-aba-conteudo="planta">
+      <h2 class="sec">Planta do QG <a class="add" data-action="editarPlanta" title="Escolher imagem"><i class="fas fa-image"></i></a></h2>
+      {{#if temPlanta}}<img class="planta" src="{{system.planta}}" data-action="editarPlanta">{{else}}<p class="vazio dica">Clique no ícone para pôr a planta ou um desenho do QG.</p>{{/if}}
+      <h2 class="sec">Equipamento guardado <a class="add" data-action="criarItem" data-type="equipamento"><i class="fas fa-plus"></i></a></h2>
+      <p class="dica">Entre um caso e outro, cada PJ guarda só um item novo. Arraste itens para cá.</p>
+      <ul class="lista armas-resumo">
+        {{#each actor.items}}
+        <li data-item-id="{{id}}"><a data-action="mostrarItem"><img src="{{img}}" class="ico"> {{name}}</a>
+          <span class="ctrl"><a data-action="editarItem"><i class="fas fa-pen"></i></a> <a data-action="apagarItem"><i class="fas fa-trash"></i></a></span></li>
+        {{/each}}
+      </ul>
+      <textarea name="system.equipamento" rows="4" placeholder="Anotações do que está guardado">{{system.equipamento}}</textarea>
+    </div>
+
+    <div data-aba-conteudo="temporada">
+      <h2 class="sec">Contatos: nomes e favores devidos</h2>
+      <textarea name="system.contatosNotas" rows="5">{{system.contatosNotas}}</textarea>
+      <h2 class="sec">Registro da temporada</h2>
+      <textarea name="system.temporada" rows="8">{{system.temporada}}</textarea>
+      <h2 class="sec">Notas do Narrador</h2>
+      <textarea name="system.notas" rows="4">{{system.notas}}</textarea>
+    </div>
+  </section>
+  <footer class="rodape">Documento de circulação restrita. Não copiar. Não fotografar. Queimar se comprometido.</footer>
+</div>

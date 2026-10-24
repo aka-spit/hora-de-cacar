@@ -2,7 +2,7 @@
   "id": "hora-de-cacar",
   "title": "Hora de Caçar",
   "description": "Sistema para jogar Hora de Caçar (Year Zero Engine) no Foundry VTT: fichas de Caçador, PNJ e Criatura, rolagens de d6 com Forçar, Medo, condições, ferimentos críticos e iniciativa por cartas.",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "authors": [
     {
       "name": "Jeferson M. Leopoldino"
@@ -35,6 +35,12 @@
       },
       "criatura": {
         "htmlFields": []
+      },
+      "qg": {
+        "htmlFields": []
+      },
+      "veiculo": {
+        "htmlFields": []
       }
     },
     "Item": {
@@ -47,6 +53,28 @@
     }
   },
   "packs": [
+    {
+      "name": "cacadores-prontos",
+      "label": "Caçadores prontos",
+      "path": "packs/cacadores-prontos",
+      "type": "Actor",
+      "system": "hora-de-cacar",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "qg-e-veiculos",
+      "label": "QG e Veículos",
+      "path": "packs/qg-e-veiculos",
+      "type": "Actor",
+      "system": "hora-de-cacar",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
     {
       "name": "talentos",
       "label": "Talentos",
@@ -120,6 +148,8 @@
       "sorting": "m",
       "color": "#8A1A12",
       "packs": [
+        "cacadores-prontos",
+        "qg-e-veiculos",
         "talentos",
         "arsenal",
         "ritos",

@@ -298,3 +298,32 @@
 .hora-de-cacar .cadeado.fechado { background: var(--hdc-red); border-color: var(--hdc-red); color: var(--hdc-paper); }
 .hora-de-cacar .atributos.travado .ponto { cursor: not-allowed; opacity: .85; }
 .hora-de-cacar .atributos.travado .ponto:not(.on) { border-style: dotted; }
+
+/* ============================================================
+   QG e Carro
+   ============================================================ */
+.hora-de-cacar .mini-link { cursor: pointer; color: var(--hdc-red); margin-left: 4px; font-size: 11px; }
+.hora-de-cacar .desenvolvimento { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 4px 0; }
+.hora-de-cacar .desenvolvimento .total { font-family: var(--hdc-f-hand); font-size: 22px; color: var(--hdc-fill); }
+.hora-de-cacar .melhorias { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 16px; }
+.hora-de-cacar .melhoria-lista li { flex-direction: column; align-items: stretch; gap: 0; position: relative; }
+.hora-de-cacar .melhoria-lista li .custo { position: absolute; right: 0; top: 4px; font-family: var(--hdc-f-type); font-size: 11px; color: var(--hdc-label); }
+.hora-de-cacar .melhoria-lista li .efeito { font-size: 12.5px; color: #4a3a2c; padding-left: 19px; line-height: 1.3; }
+.hora-de-cacar .melhoria-lista li.tem .efeito { color: var(--hdc-fill); }
+.hora-de-cacar .melhoria-lista .caixa { font-weight: 600; padding-right: 34px; }
+.hora-de-cacar .fatia { display: inline-block; width: 22px; height: 22px; border: 2px solid var(--hdc-ink); margin-right: -2px; cursor: pointer; background: transparent; }
+.hora-de-cacar .relogio .fatia:first-child { border-radius: 11px 0 0 11px; }
+.hora-de-cacar .relogio .fatia:last-child { border-radius: 0 11px 11px 0; }
+.hora-de-cacar .fatia.on { background: var(--hdc-red); }
+.hora-de-cacar .fatia.eles.on { background: var(--hdc-ink); }
+.hora-de-cacar table.ameacas td input[type="text"] { width: calc(100% - 24px); }
+.hora-de-cacar table.ameacas td.relogio { width: 90px; white-space: nowrap; }
+.hora-de-cacar img.planta { max-width: 100%; border: 1px solid var(--hdc-dot); cursor: pointer; background: #fff; }
+.hora-de-cacar .perseguicao { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.hora-de-cacar .perseguicao .corrida { display: flex; align-items: center; gap: 3px; }
+.hora-de-cacar .perseguicao .corrida .lbl { width: 48px; }
+.hora-de-cacar .perseguicao .curto-sel select { width: 120px; }
+.hora-de-cacar .veiculo-ficha .caixa-atributos input[type="text"].medio { width: 4em; text-align: center; font-size: 20px; }
+.hora-de-cacar .obs { font-family: var(--hdc-f-hand); color: var(--hdc-fill); font-size: 14px; }
+.hora-de-cacar .carimbo-campo > span { color: var(--hdc-red); }
+.hora-de-cacar .veiculo-ficha input[name="system.defeito"] { width: 100%; }

@@ -14,6 +14,7 @@ export class HDCActor extends Actor {
     const proto = {};
     if (this.type === "cacador") Object.assign(proto, { actorLink: true, disposition: 1, sight: { enabled: true } });
     if (this.type === "criatura") Object.assign(proto, { disposition: -1 });
+    if (this.type === "qg" || this.type === "veiculo") Object.assign(proto, { actorLink: true, disposition: 0 });
     if (Object.keys(proto).length) this.updateSource({ prototypeToken: proto });
   }
 

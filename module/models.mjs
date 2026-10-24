@@ -3,6 +3,7 @@
  * Substituem o antigo template.json.
  */
 import { HDC } from "./config.mjs";
+import { MELHORIAS, VEICULOS } from "./config-qg.mjs";
 
 const F = foundry.data.fields;
 
@@ -276,5 +277,68 @@ export class RitoData extends foundry.abstract.TypeDataModel {
       custo: txt(),
       descricao: txt()
     };
+  }
+}
+
+/* -------------------------------------------- */
+/*  QG E VEÍCULO (Cap. 6 e 7)                   */
+/* -------------------------------------------- */
+
+export class QgData extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    const melhorias = {};
+    for (const k of Object.keys(MELHORIAS)) melhorias[k] = bool(k === "arquivo" || k === "veterano");
+    const ameaca = () => new F.SchemaField({ nome: txt(), fatias: int(0, 0, 3) });
+    return {
+      tipo: txt("Hotel de beira de estrada"),
+      fachada: txt(),
+      veterano: txt(),
+      veteranoSegredo: txt(),
+      desenvolvimento: int(0, 0),
+      comprasVolta: int(0, 0),
+      melhorias: new F.SchemaField(melhorias),
+      ameacas: new F.SchemaField({ a1: ameaca(), a2: ameaca(), a3: ameaca(), a4: ameaca(), a5: ameaca(), a6: ameaca() }),
+      planta: txt(),
+      equipamento: txt(),
+      contatosNotas: txt(),
+      temporada: txt(),
+      notas: txt()
+    };
+  }
+
+  prepareDerivedData() {
+    const m = this.melhorias;
+    this.instalacoes = Object.entries(MELHORIAS).filter(([k, v]) => v.tipo === "instalacao" && m[k]).length;
+    this.redutorAmeaca = (m.sentinela ? 1 : 0) + (m.quarto ? 1 : 0);
+  }
+}
+
+export class VeiculoData extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      tipo: txt("seda"),
+      qualidade: int(1, 1, 4),
+      bonus: int(1, -3, 5),
+      assentos: txt("5"),
+      carga: int(12, 0),
+      manutencao: int(1, 0, 6),
+      estado: txt("bom"),
+      defeito: txt(),
+      portaMalas: bool(),
+      perseguicao: new F.SchemaField({ distancia: int(5, 3, 7), nos: int(0, 0), eles: int(0, 0) }),
+      notas: txt()
+    };
+  }
+
+  prepareDerivedData() {
+    this.bonusEfetivo = this.estado === "bom" ? this.bonus : 0;
+    this.anda = this.estado !== "quebrado";
+    let usada = 0;
+    for (const i of this.parent.items) {
+      const s = i.system;
+      if (s?.peso) usada += (HDC.pesos[s.peso]?.valor ?? 0) * (s.quantidade ?? 1);
+    }
+    this.cargaUsada = usada;
+    this.notaTipo = VEICULOS[this.tipo]?.nota ?? "";
   }
 }

@@ -3,7 +3,9 @@
     "Actor": {
       "cacador": "Caçador",
       "pnj": "PNJ",
-      "criatura": "Criatura"
+      "criatura": "Criatura",
+      "qg": "QG (quartel-general)",
+      "veiculo": "Carro"
     },
     "Item": {
       "arma": "Arma",
